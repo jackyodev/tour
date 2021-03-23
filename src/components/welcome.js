@@ -1,24 +1,32 @@
 import React from "react";
+import video from "../src/welcome_video_bg.mp4";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../scss/welcomeScreen.scss";
 
-export function welcomeScreen() {
-  function PushStart() {
-    // let history = useHistory();
-    // history.push("/home");
-    console.log("ERROR");
-  }
+export function WelcomeScreen(props) {
+  // let history = useHistory();
+
+  // function PushStart() {
+  //   history.push("");
+  // }
+
   return (
-    <div className="bg">
-      <h1> Queens Botanical Garden</h1>
-      <h2> Tour and Guide App</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus
-        lorem, tempus ac arcu vitae, euismod varius est. Donec rutrum lacus
-      </p>
+    <div className="welcomeScreen">
+      <video autoPlay muted loop>
+        <source src={video} type="video/mp4" />
+      </video>
 
-      <button onClick={PushStart}> START </button>
+      <div className="overlay"></div>
+      <main>
+        <h1> Queens Botanical Garden</h1>
+        <h2> Digital Guide </h2>
+        <Link to="/" className="button">
+          Start
+        </Link>
+      </main>
     </div>
   );
 }
 
-export default { welcomeScreen };
+export default { WelcomeScreen };

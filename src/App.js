@@ -1,8 +1,8 @@
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
-import { welcomeScreen } from "./components/welcome";
+import { WelcomeScreen } from "./components/welcome";
 
 function App() {
   return (
@@ -10,13 +10,15 @@ function App() {
       <Switch>
         <Route
           exact
-          path="/songs"
+          path="/start"
           render={() => {
             return <h1> Hello </h1>;
           }}
         ></Route>
 
-        <Route exact path="/*" render={welcomeScreen}></Route>
+        <Route exact path="/*">
+          <WelcomeScreen />
+        </Route>
       </Switch>
     </div>
   );
