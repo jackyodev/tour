@@ -21,7 +21,7 @@ export function WelcomeScreen(props) {
       <main>
         <h1> Queens Botanical Garden</h1>
         <h2> Digital Guide </h2>
-        <Link to="/" className="button">
+        <Link to="/home" className="button">
           Start
         </Link>
       </main>

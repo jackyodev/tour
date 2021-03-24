@@ -54,6 +54,8 @@
     h1,
     h2 {
       text-shadow: 1px 1px 10px #000000;
+      @include reset-margin-padding;
+
 
     }
 
@@ -71,7 +73,6 @@
     }
 
     @media screen and (min-width: 50em) {
-
       align-items: center;
 
     }

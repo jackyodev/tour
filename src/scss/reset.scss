@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+@mixin reset-margin-padding {
+  margin: 0px;
+  padding: 0px;
+}
+
 @mixin reset-buttons {
   display: inline-block;
   border: none;
