@@ -1,0 +1,33 @@
+.home {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+
+
+  .top {
+    background-color: #E0E8B1;
+    height: 35%;
+    width: 100%;
+  }
+
+  .highlights {
+
+
+    h1 {
+      font-family: Arial;
+      text-transform: uppercase;
+      letter-spacing: initial;
+      text-align: center;
+      padding: 1em;
+      font-weight: 500;
+    }
+
+    ul {
+      background-color: rebeccapurple;
+      list-style: none;
+    }
+
+    li {}
+
+  }
+}
