@@ -18,15 +18,18 @@ const getAllPlants = (req, res) => {
 
 const getPlantsByParamsMonth = async (req, res) => {
   const month = req.params.month;
-
   try {
     const sql = await db.any(
-      `SELECT month_name, plantsmonths.id, common_name FROM months RIGHT JOIN plantsmonths ON months.month_number = plantsmonths.month_number WHERE months.month_name = '${month}'`,
+      `SELECT plantsphotos.plant_id, plantsphotos.common_name, plant_species_name, STRING_AGG(photo_url,', ') as photo_urls from plantsphotos INNER JOIN (SELECT month_name, common_name
+FROM months RIGHT JOIN plantsmonths ON months.month_number = plantsmonths.month_number 
+WHERE months.month_name = '${month}') AS table2 ON plantsphotos.common_name = table2.common_name GROUP BY plantsphotos.common_name, plantsphotos.plant_id,plant_species_name
+`,
       req.body
     );
     const data = await sql;
     const resp = (data) => {
       if (dataExist(data)) {
+        console.log(data);
         return res.status(200).json({
           status: 200,
           message: "success",

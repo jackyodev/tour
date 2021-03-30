@@ -55,6 +55,15 @@ CREATE TABLE plants
  plant_desc TEXT
 );
 
+CREATE TABLE plantsPhotos
+(
+id SERIAL PRIMARY KEY,
+ plant_id INT,
+ plant_species_name VARCHAR(255) NOT NULL,
+ common_name VARCHAR(255) NOT NULL,
+ photo_url TEXT
+);
+
 
 \COPY months (month_number, month_name) FROM 'Y:\Projects\tour\backend\db\months.csv' DELIMITER ',' CSV HEADER;--
 \COPY locations (location_name, thumbnail_url, map_number, place_desc)  FROM 'Y:\Projects\tour\backend\db\locations.csv' DELIMITER ',' CSV HEADER;--
@@ -62,4 +71,5 @@ CREATE TABLE plants
 \COPY plants (plant_id, plant_species_name, common_name, plant_desc  )  FROM 'Y:\Projects\tour\backend\db\plants.csv' DELIMITER ',' CSV HEADER  encoding 'UTF8';-- 
 \COPY plantsMonths (month_number, common_name)  FROM 'Y:\Projects\tour\backend\db\plantsByMonths.csv' DELIMITER ',' CSV HEADER;--
 \COPY plantsLocations (common_name, location)  FROM 'Y:\Projects\tour\backend\db\plantsByLocations.csv' DELIMITER ',' CSV HEADER;--
+\COPY plantsPhotos (plant_id, plant_species_name, common_name, photo_url)  FROM 'Y:\Projects\tour\backend\db\plantsPhotos.csv' DELIMITER ',' CSV HEADER;--
 
