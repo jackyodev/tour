@@ -1,68 +1,112 @@
-.home {
+.main {
   font-family: Arial, Helvetica, sans-serif;
-  width: 100vw;
+  // width: 100vw;
   height: 100vh;
 
+}
 
-  .top {
+
+.top {
+  height: 25vh;
+  border-bottom: .5px solid gray;
+
+  .header_img {
+    background-image: url("https://queensbotanical.org/wp-content/uploads/2021/01/2017.3.17_CREDIT-Jess-Brey10-scaled-e1609948434884.jpg");
+    height: 100%;
     width: 100%;
-    background-color: black;
-    height: 35vh;
-    border-bottom: 1px solid black;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
+}
 
-  .highlights {
-    font-weight: bold;
+.body {
 
-    h1 {
-      font-family: Arial;
-      text-transform: uppercase;
-      letter-spacing: initial;
-      text-align: center;
-      padding: 1em;
-      font-weight: 600;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d9d7db' fill-opacity='0.32' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+  h1 {
+    color: #C92965;
+    text-transform: uppercase;
+    letter-spacing: initial;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0 1em 0;
+    font-weight: bolder;
+  }
+}
+
+.highlights {
+
+  width: 85%;
+  margin: auto;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+
+  li {
+    box-shadow: 1px 1px 5px #000000c9;
+    font-size: 1em;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    margin: .25em;
+    height: 100%;
+    width: 20vw;
+    min-width: 250px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      min-width: 100%;
+      overflow: hidden;
+
     }
 
-    ul {
+    a {
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-decoration: none;
+
+      .picture {
+        position: relative;
+        display: inline-block;
 
 
-
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-      justify-content: space-evenly;
-      padding-left: 0;
-
-      li {
-        @media only screen and (max-width: 768px) {
-          width: 100vmax;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
         }
 
-        border: 1px solid black;
-        background-color: floralwhite;
-        width: 25vmax;
-        text-transform: capitalize;
-        margin: 1em;
-        height: 100%;
-
-        a {
-          font-size: 2rem;
-          text-decoration: none;
-
-          img {
-            width: 100%;
-            // height: 100%;
-            object-fit: cover;
-          }
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.356) 15%, hsla(0, 0%, 100%, .25));
         }
 
+        &:hover {
+          background-color: #C92965;
+          filter: brightness(1.25);
+        }
+      }
+
+
+      p {
+        z-index: 1;
+        color: white;
+        position: absolute;
+        padding: .2em;
+        bottom: -15px;
+        right: 0;
       }
 
     }
