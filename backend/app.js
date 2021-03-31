@@ -7,6 +7,8 @@ var logger = require("morgan");
 // Routers Action
 var indexRouter = require("./routes/index");
 const birdsRouter = require("./routes/birds");
+const plantsRouter = require("./routes/plants");
+const gardensRouter = require("./routes/gardens");
 
 var app = express();
 
@@ -26,8 +28,11 @@ if (process.env.NODE_ENV === "production") {
 }
 */
 
-app.use("/api", indexRouter);
 app.use("/api/birds", birdsRouter);
+app.use("/api/plants", plantsRouter);
+app.use("/api/gardens", gardensRouter);
+
+app.use("/*", indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
