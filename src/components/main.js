@@ -19,8 +19,14 @@ const mapHighlights = (array) => {
     return (
       <li key={i}>
         <Link to={`/plants/${el.common_name}`}>
-          <img alt={el.plant_species_name} src={urlsToArray(el.photo_urls)} />
-          <p>{el.common_name}</p>
+          <div className="picture">
+            <img
+              id="picture"
+              alt={el.plant_species_name}
+              src={urlsToArray(el.photo_urls)}
+            />
+            <p>{el.common_name}</p>
+          </div>
         </Link>
       </li>
     );
@@ -47,14 +53,11 @@ export function Home() {
   }, []);
 
   return (
-    <div className="home">
+    <div className="main">
       <div className="top">
-        <img
-          alt="working_greenhouse"
-          src="https://queensbotanical.org/wp-content/uploads/2021/01/2017.3.17_CREDIT-Jess-Brey10-scaled-e1609948434884.jpg"
-        />
+        <div className="header_img"></div>
       </div>
-      <div className="highlights">
+      <div className="body">
         <h1>Current Highlights</h1>
         <ul className="highlights">{mapHighlights(plantHighlights)}</ul>
       </div>
