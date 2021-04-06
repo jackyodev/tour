@@ -1,0 +1,39 @@
+nav {
+  border-top: 1px solid darkgrey;
+  background-color: rgb(251, 251, 251);
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    background-color: rgb(251, 251, 251);
+
+
+    a {
+      // font-size: .25em;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border-radius: 5px;
+      margin: 1vh;
+      min-width: 78px;
+      background-color: #F17B30;
+      text-decoration: none;
+      padding: min(10px, 1vh);
+
+      &:hover {
+        background-color: #425719;
+      }
+    }
+
+  }
+
+
+}

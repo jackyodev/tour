@@ -5,12 +5,6 @@ import { Link } from "react-router-dom";
 import "../scss/welcomeScreen.scss";
 
 export function WelcomeScreen(props) {
-  // let history = useHistory();
-
-  // function PushStart() {
-  //   history.push("");
-  // }
-
   return (
     <div className="welcomeScreen">
       <video autoPlay muted loop>
