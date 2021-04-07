@@ -20,7 +20,7 @@ const mapHighlights = (array) => {
     urlsToArray(el.photo_urls);
     return (
       <li key={i}>
-        <Link to={`/plants/${el.common_name}`}>
+        <Link to={`/plants/?id=${el.plant_id}`}>
           <div className="picture">
             <img
               id="picture"
@@ -42,7 +42,6 @@ export function Home() {
     axios
       .get(`/api/plants/months/${getDayName()}`)
       .then((res) => {
-        console.log(res.data.data);
         setPlantHighlights(res.data.data);
       })
       .catch((err) => {
