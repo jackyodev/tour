@@ -55,7 +55,7 @@ export function Home() {
 
   return (
     <>
-      <nav>{Nav()} </nav>
+      <nav>{Nav()}</nav>
       <div className="main">
         <div className="top">
           <div className="header_img"></div>
