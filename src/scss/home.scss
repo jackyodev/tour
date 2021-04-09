@@ -11,7 +11,7 @@
   border-bottom: .5px solid gray;
 
   .header_img {
-    background-image: url("https://queensbotanical.org/wp-content/uploads/2021/01/2017.3.17_CREDIT-Jess-Brey10-scaled-e1609948434884.jpg");
+    background-image: url("https://images.unsplash.com/photo-1457282168619-2383c79b278d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1954&q=80");
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -27,25 +27,26 @@
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d9d7db' fill-opacity='0.32' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 
   h1 {
-    color: #C92965;
+    background-color: #16912B;
+    color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: initial;
     text-align: center;
-    margin: 0;
-    padding: 1em 0 1em 0;
+    margin-bottom: 20px;
+    padding: 10px;
     font-weight: bolder;
   }
 }
 
 .highlights {
-
-  width: 85%;
+  width: 85vw;
   margin: auto;
   text-align: left;
   list-style: none;
   padding-left: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  // gap: max(10px, 1em);
 
 
   li {

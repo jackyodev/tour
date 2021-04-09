@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../scss/home.scss";
+
+import { Nav } from "../components/nav";
 
 const getDayName = () => {
   let day = new Date().toLocaleString("en-us", { month: "long" });
@@ -53,18 +55,21 @@ export function Home() {
   }, []);
 
   return (
-    <div className="main">
-      <div className="top">
-        <div className="header_img"></div>
+    <>
+      <nav>{Nav()} </nav>
+      <div className="main">
+        <div className="top">
+          <div className="header_img"></div>
+        </div>
+        <div className="body">
+          <h1>Current Highlights</h1>
+          <ul className="highlights">{mapHighlights(plantHighlights)}</ul>
+        </div>
       </div>
-      <div className="body">
-        <h1>Current Highlights</h1>
-        <ul className="highlights">{mapHighlights(plantHighlights)}</ul>
-      </div>
-    </div>
+    </>
   );
 }
 
-export default {
-  Home,
-};
+const Main = { Home };
+
+export default Main;
