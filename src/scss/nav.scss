@@ -14,22 +14,27 @@ nav {
 
 
     a {
-      // font-size: .25em;
+      font-size: .55em;
+      font-family: Arial;
+      font-weight: 100;
       display: flex;
       flex-direction: column;
-      gap: 1px;
       justify-content: center;
       align-items: center;
       color: white;
-      border-radius: 5px;
+      // border-radius: 3px;
       margin: 1vh;
-      min-width: 78px;
+      min-width: 75px;
       background-color: #F17B30;
       text-decoration: none;
       padding: min(10px, 1vh);
 
+      svg {
+        font-size: 2em;
+      }
+
       &:hover {
-        background-color: #425719;
+        background-color: #16912B;
       }
     }
 

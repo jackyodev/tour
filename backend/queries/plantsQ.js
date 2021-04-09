@@ -16,6 +16,29 @@ const getAllPlants = (req, res) => {
     });
 };
 
+const getOnePlant = (req, res) => {
+  const plants_id = req.params.id;
+  db.one(
+    `SELECT plants.plant_id, plants.plant_species_name, plants.common_name, plant_desc, STRING_AGG(photo_url, ',') as photo_url 
+FROM plants LEFT JOIN plantsphotos as photos 
+ON plants.plant_id = photos.plant_id 
+WHERE plants.plant_id = '${plants_id}'
+GROUP BY plants.plant_id,plants.plant_species_name, plants.common_name, plant_desc`,
+    req.body
+  )
+    .then((result) => {
+      res.status(200).json({
+        status: 200,
+        message: "success",
+        data: result,
+      });
+    })
+    .catch((e) => {
+      status: 400;
+      error: e.message;
+    });
+};
+
 const getPlantsByParamsMonth = async (req, res) => {
   const month = req.params.month;
   try {
@@ -55,4 +78,5 @@ WHERE months.month_name = '${month}') AS table2 ON plantsphotos.common_name = ta
 module.exports = {
   getAllPlants,
   getPlantsByParamsMonth,
+  getOnePlant,
 };
