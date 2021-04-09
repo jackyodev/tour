@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../src/welcome_video_bg.mp4";
+import video from "../assets/welcome_video_bg.mp4";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../scss/welcomeScreen.scss";

@@ -3,18 +3,21 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 export function headerPhoto(urlString) {
-  let arrayPhoto = [
-    {
-      src: urlString,
-    },
-  ];
+  let urlArray = urlString.split(",");
+
+  //[URL] => [{src: URL}] => <div></div>
+  let arrayPhotos = urlArray.map((el, i) => {
+    return (
+      <div key={i}>
+        <img src={el} />
+      </div>
+    );
+  });
 
   return (
     <div className="plantPhoto">
-      <Carousel showThumbs={false} emulateTouch={true} width={"50vw"}>
-        <div>
-          <img src={urlString} />
-        </div>
+      <Carousel showThumbs={false} emulateTouch={true}>
+        {arrayPhotos}
       </Carousel>
     </div>
   );
