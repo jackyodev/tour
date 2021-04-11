@@ -26,5 +26,5 @@ export function Nav(props) {
 export function navItem(props) {
   return;
 }
-
-export default { Nav };
+const exported = { Nav };
+export default exported;

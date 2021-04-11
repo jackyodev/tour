@@ -20,7 +20,7 @@ const mapHighlights = (array) => {
     urlsToArray(el.photo_urls);
     return (
       <li key={i}>
-        <Link to={`/plants/?id=${el.plant_id}`}>
+        <Link to={`/plant/?id=${el.plant_id}`}>
           <div className="picture">
             <img
               id="picture"
@@ -69,6 +69,6 @@ export function Home() {
   );
 }
 
-const Main = { Home };
+const Main = { Home, mapHighlights };
 
 export default Main;

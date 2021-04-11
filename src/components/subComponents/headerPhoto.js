@@ -9,7 +9,7 @@ export function headerPhoto(urlString) {
   let arrayPhotos = urlArray.map((el, i) => {
     return (
       <div key={i}>
-        <img src={el} />
+        <img alt="plant" src={el} />
       </div>
     );
   });
@@ -22,8 +22,8 @@ export function headerPhoto(urlString) {
     </div>
   );
 }
-
-export default { headerPhoto };
+const exported = { headerPhoto };
+export default exported;
 
 //https://www.npmjs.com/package/react-responsive-carousel
 //https://www.npmjs.com/package/react-gallery-carousel
