@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../scss/home.scss";
 
-import { Nav } from "../components/nav";
-
 const getDayName = () => {
   let day = new Date().toLocaleString("en-us", { month: "long" });
   return day;
@@ -55,13 +53,12 @@ export function Home() {
 
   return (
     <>
-      <nav>{Nav()}</nav>
       <div className="main">
         <div className="top">
           <div className="header_img"></div>
         </div>
         <div className="body">
-          <h1>Current Highlights</h1>
+          <h1>In Bloom</h1>
           <ul className="highlights">{mapHighlights(plantHighlights)}</ul>
         </div>
       </div>

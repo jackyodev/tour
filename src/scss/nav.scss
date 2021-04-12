@@ -3,7 +3,7 @@ nav {
   background-color: rgb(251, 251, 251);
   position: fixed;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
 
   div {
@@ -22,7 +22,7 @@ nav {
       justify-content: center;
       align-items: center;
       color: white;
-      // border-radius: 3px;
+      border-radius: .5em;
       margin: 1vh;
       min-width: 75px;
       background-color: #F17B30;

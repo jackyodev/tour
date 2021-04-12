@@ -5,7 +5,13 @@ import { Loading } from "./subComponents/loading.js";
 
 function renderComp(prop) {
   if (prop !== null) {
-    return <div className="highlights">{Main.mapHighlights(prop)}</div>;
+    return (
+      <div className="plants">
+        <h1 className="pageTitle">All Plants</h1>
+        <nav> </nav>
+        <ul className="highlights">{Main.mapHighlights(prop)}</ul>;
+      </div>
+    );
   } else return <Loading />;
 }
 

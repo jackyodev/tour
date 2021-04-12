@@ -16,3 +16,17 @@
   align-items: center;
   flex-direction: column;
 }
+
+.pageTitle {
+  position: sticky;
+  color: white;
+  top: 0;
+  text-align: center;
+  font-size: .8em;
+  font-weight: 500;
+  z-index: 2;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: .25em;
+  background-color: #16912B;
+}
