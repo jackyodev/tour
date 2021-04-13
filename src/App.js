@@ -7,6 +7,7 @@ import { Home } from "./components/main";
 import { Plant } from "./components/plant";
 import { AllPlants } from "./components/allPlants";
 import { Nav } from "./components/nav";
+import { Gardens } from "./components/gardens";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             <h1> /tours</h1>
           </Route>
           <Route exact path="/gardens">
-            <h1> /gardens</h1>
+            <Gardens />
           </Route>
           <Route exact path="/garden">
             <h1> /garden</h1>
