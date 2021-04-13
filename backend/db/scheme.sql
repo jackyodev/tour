@@ -19,10 +19,18 @@ CREATE TABLE months
 CREATE TABLE locations
 (
  id SERIAL PRIMARY KEY,
- location_name VARCHAR(50),
- thumbnail_url VARCHAR(255),
  map_number INT NOT NULL, 
+ location_name TEXT,
+ thumbnail_url TEXT,
  place_desc TEXT
+);
+
+CREATE TABLE locationsMedia
+(
+ id SERIAL PRIMARY KEY,
+ location_id VARCHAR(50),
+ media VARCHAR(50),
+ media_url TEXT
 );
 
 CREATE TABLE birds
@@ -66,7 +74,8 @@ id SERIAL PRIMARY KEY,
 
 
 \COPY months (month_number, month_name) FROM 'Y:\Projects\tour\backend\db\months.csv' DELIMITER ',' CSV HEADER;--
-\COPY locations (location_name, thumbnail_url, map_number, place_desc)  FROM 'Y:\Projects\tour\backend\db\locations.csv' DELIMITER ',' CSV HEADER;--
+\COPY locations (map_number, location_name, thumbnail_url, place_desc)  FROM 'Y:\Projects\tour\backend\db\locations.csv' DELIMITER ',' CSV HEADER;--
+\COPY locationsMedia (location_id, media, media_url)  FROM 'Y:\Projects\tour\backend\db\locationsMedia.csv' DELIMITER ',' CSV HEADER;--
 \COPY birds (bird_name, bird_species_name)  FROM 'Y:\Projects\tour\backend\db\birds.csv' DELIMITER ',' CSV HEADER;--
 \COPY plants (plant_id, plant_species_name, common_name, plant_desc  )  FROM 'Y:\Projects\tour\backend\db\plants.csv' DELIMITER ',' CSV HEADER  encoding 'UTF8';-- 
 \COPY plantsMonths (month_number, common_name)  FROM 'Y:\Projects\tour\backend\db\plantsByMonths.csv' DELIMITER ',' CSV HEADER;--

@@ -2,7 +2,7 @@ const { db } = require("../db/server.js");
 
 const getAllGardens = (req, res) => {
   db.any(
-    "SELECT location_name, thumbnail_url, map_number, place_desc, string_agg(common_name, ', ') as plants FROM locations LEFT JOIN plantslocations on location_name = location GROUP BY locations.location_name, thumbnail_url, map_number, place_desc",
+    "SELECT MAP_NUMBER, LOCATION_NAME,THUMBNAIL_URL FROM LOCATIONS",
     req.body
   )
     .then((result) => {
@@ -21,3 +21,5 @@ const getAllGardens = (req, res) => {
 module.exports = {
   getAllGardens,
 };
+
+//"SELECT map_number, location_name, thumbnail_url, place_desc, string_agg(common_name, ', ') as plants FROM locations LEFT JOIN plantslocations on location_name = location GROUP BY locations.location_name, thumbnail_url, map_number, place_desc"//

@@ -1,6 +1,5 @@
 import React from "react";
 import video from "../assets/welcome_video_bg.mp4";
-import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../scss/welcomeScreen.scss";
 
@@ -23,4 +22,5 @@ export function WelcomeScreen(props) {
   );
 }
 
-export default { WelcomeScreen };
+const exported = { WelcomeScreen };
+export default exported;

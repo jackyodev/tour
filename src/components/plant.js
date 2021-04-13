@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
-import { Loading } from "../components/subComponents/loading.js";
+import { useLocation } from "react-router-dom";
+import { Loading } from "./subComponents/loading.js";
 import axios from "axios";
 
-import { headerPhoto } from "../components/subComponents/headerPhoto";
+import { headerPhoto } from "./subComponents/headerPhoto";
+import "../scss/plant.scss";
 
 function renderComp(props) {
-  if (props != null) {
+  if (props !== null) {
     let { photo_url, common_name, plant_species_name, plant_desc } = props;
     return (
       <>
-        {headerPhoto(photo_url)}
-        <div>{common_name}</div>
-        <div>{plant_species_name}</div>
-        <div>{plant_desc}</div>
+        <div className="plant">
+          {headerPhoto(photo_url)}
+          <div className="plantName">
+            <div className="">{common_name}</div>
+            <i className="">{plant_species_name}</i>
+          </div>
+          <p className="">{plant_desc}</p>
+        </div>
       </>
     );
   } else {
@@ -21,9 +26,8 @@ function renderComp(props) {
   }
 }
 
-export function Plants() {
+export function Plant() {
   const location = useLocation();
-  const currentPath = location.pathname;
   const useParams = new URLSearchParams(location.search);
   const id = useParams.get("id");
   const [plantInfo, setPlantInfo] = useState(null);
@@ -35,6 +39,7 @@ export function Plants() {
         .get(`/api/plants/${id}`)
         .then((res) => {
           setPlantInfo(res.data.data);
+          console.log(res.data.data);
         })
         .catch((err) => console.log(err));
     };
@@ -45,9 +50,10 @@ export function Plants() {
 
     //the return callback is to cleanup the useEffect
     return () => clearTimeout(timer);
-  }, []);
+  }, [id]);
 
   return renderComp(plantInfo);
 }
 
-export default { Plants };
+const exported = { Plant };
+export default exported;

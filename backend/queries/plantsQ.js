@@ -2,7 +2,12 @@ const { dataExist } = require("../functions/dataChecker");
 const { db } = require("../db/server.js");
 
 const getAllPlants = (req, res) => {
-  db.any("SELECT * from plants", req.body)
+  db.any(
+    `SELECT plants.plant_id, plants.common_name, plants.plant_species_name, STRING_AGG(plantsphotos.photo_url, ', ')  AS  photo_urls from plants
+LEFT JOIN plantsphotos ON plants.plant_id = plantsphotos.plant_id GROUP BY plants.plant_id,plants.common_name, plants.plant_species_name ORDER BY plants.plant_id ASC
+`,
+    req.body
+  )
     .then((result) => {
       res.status(200).json({
         status: 200,

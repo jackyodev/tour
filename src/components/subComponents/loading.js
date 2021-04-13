@@ -5,7 +5,7 @@ export function Loading() {
   return (
     <>
       <div className="loading">
-        <img src={loadingSpinner} width="100px" />
+        <img alt="loading spinner" src={loadingSpinner} width="50px" />
         <p> Loading </p>
       </div>
     </>

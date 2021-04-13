@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   letter-spacing: 1.2px;
   font-size: 18px;
   height: 100vh;
@@ -7,4 +7,27 @@
 
 * {
   box-sizing: border-box;
+}
+
+.loading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pageTitle {
+  position: sticky;
+  color: white;
+  top: 0;
+  text-align: left;
+  font-size: clamp(1em, 5vw);
+  font-weight: bold;
+  z-index: 2;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: .25em;
+  padding-left: .5em;
+  background-color: #16912B;
 }
