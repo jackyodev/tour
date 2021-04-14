@@ -19,10 +19,10 @@
 
 .pageTitle {
   position: sticky;
-  color: white;
   top: 0;
-  text-align: left;
-  font-size: clamp(1em, 5vw);
+  color: #fff;
+  text-align: right;
+  font-size: clamp(1rem, 1em, 2vw);
   font-weight: bold;
   z-index: 2;
   margin-top: 0px;

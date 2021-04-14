@@ -1,6 +1,11 @@
-.highlights li a .picture {
+.garden {}
+
+
+
+.gardens .highlights li a .picture {
   width: 100%;
-  height: 35vh;
+  max-height: 25vh;
+  overflow: hidden;
 
   img {
     object-fit: cover;
@@ -12,7 +17,6 @@ li {
 
 
   .mapNumber {
-
     position: absolute;
     z-index: 1;
     top: 0;
