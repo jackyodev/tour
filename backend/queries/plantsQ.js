@@ -57,7 +57,6 @@ WHERE months.month_name = '${month}') AS table2 ON plantsphotos.common_name = ta
     const data = await sql;
     const resp = (data) => {
       if (dataExist(data)) {
-        console.log(data);
         return res.status(200).json({
           status: 200,
           message: "success",

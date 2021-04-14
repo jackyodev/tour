@@ -2,22 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Loading } from "./subComponents/loading.js";
 import axios from "axios";
-
-import { headerPhoto } from "./subComponents/headerPhoto";
-import "../scss/plant.scss";
+import { gardenHeaderMedia } from "../components/subComponents/headerPhoto";
 
 function renderComp(props) {
   if (props !== null) {
-    let { photo_url, common_name, plant_species_name, plant_desc } = props;
+    let { map_number, location_name, place_desc } = props.desc;
+    let mediaArray = props.media;
     return (
       <>
-        <div className="plant">
-          {headerPhoto(photo_url)}
-          <div className="plantName">
-            <div className="">{common_name}</div>
-            <i className="">{plant_species_name}</i>
+        <div className="garden">
+          <div>{gardenHeaderMedia(mediaArray)}</div>
+          <div className="gardenName">
+            <i className="">
+              {map_number}. {location_name}
+            </i>
           </div>
-          <p className="">{plant_desc}</p>
+          <p className="">{place_desc}</p>
         </div>
       </>
     );
@@ -26,19 +26,20 @@ function renderComp(props) {
   }
 }
 
-export function Plant() {
+export function Garden() {
   const location = useLocation();
   const useParams = new URLSearchParams(location.search);
   const id = useParams.get("id");
-  const [plantInfo, setPlantInfo] = useState(null);
+  const [gardenInfo, setGardenInfo] = useState(null);
 
   useEffect(() => {
     //https://dev.to/reenydavidson/settimeout-in-useeffect-api-call-data-fetching-j33
     const fetchData = () => {
+      //use gardens route to id each route
       axios
-        .get(`/api/plants/${id}`)
+        .get(`/api/gardens/${id}`)
         .then((res) => {
-          setPlantInfo(res.data.data);
+          setGardenInfo(res.data.data);
         })
         .catch((err) => console.log(err));
     };
@@ -51,8 +52,8 @@ export function Plant() {
     return () => clearTimeout(timer);
   }, [id]);
 
-  return renderComp(plantInfo);
+  return renderComp(gardenInfo);
 }
 
-const exported = { Plant };
+const exported = { Garden };
 export default exported;

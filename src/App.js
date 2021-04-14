@@ -8,6 +8,7 @@ import { Plant } from "./components/plant";
 import { AllPlants } from "./components/allPlants";
 import { Nav } from "./components/nav";
 import { Gardens } from "./components/gardens";
+import { Garden } from "./components/garden";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             <Gardens />
           </Route>
           <Route exact path="/garden">
-            <h1> /garden</h1>
+            <Garden />
           </Route>
           <Route exact path="/plants">
             <AllPlants />
