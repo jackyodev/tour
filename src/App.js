@@ -23,7 +23,9 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/tours">
-            <h1> /tours</h1>
+            <>
+              <iframe src="https://www.google.com/maps/d/embed?mid=1rCxiPlEztjpkarehSm7Tm5waGQZm1oz1"></iframe>
+            </>
           </Route>
           <Route exact path="/gardens">
             <Gardens />

@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 import { useLocation } from "react-router-dom";
 import { Loading } from "./subComponents/loading.js";
-import axios from "axios";
-import { gardenHeaderMedia } from "../components/subComponents/headerPhoto";
+import { gardenHeaderMedia } from "./subComponents/headerMedia.js";
+
+import "../scss/garden.scss";
 
 function renderComp(props) {
   if (props !== null) {
     let { map_number, location_name, place_desc } = props.desc;
-    let mediaArray = props.media;
+
     return (
-      <>
-        <div className="garden">
-          <div>{gardenHeaderMedia(mediaArray)}</div>
-          <div className="gardenName">
-            <i className="">
-              {map_number}. {location_name}
-            </i>
-          </div>
-          <p className="">{place_desc}</p>
-        </div>
-      </>
+      <div className="garden">
+        <h1 className="pageTitle">
+          {map_number}. {location_name}
+        </h1>
+        {gardenHeaderMedia(props.media)}
+        <p className="pageDesc">{place_desc}</p>
+      </div>
     );
   } else {
     return <Loading />;
@@ -34,6 +33,7 @@ export function Garden() {
 
   useEffect(() => {
     //https://dev.to/reenydavidson/settimeout-in-useeffect-api-call-data-fetching-j33
+
     const fetchData = () => {
       //use gardens route to id each route
       axios

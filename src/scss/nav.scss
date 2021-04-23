@@ -4,10 +4,12 @@ nav {
   position: fixed;
   bottom: 0;
   z-index: 3;
-  width: 100%;
+  width: 100vw;
 
   div {
     display: flex;
+    width: 100%;
+
     justify-content: space-around;
     text-align: right;
     background-color: rgb(251, 251, 251);

@@ -3,23 +3,21 @@ import { useLocation } from "react-router-dom";
 import { Loading } from "./subComponents/loading.js";
 import axios from "axios";
 
-import { headerPhoto } from "./subComponents/headerPhoto";
+import { plantHeaderMedia } from "./subComponents/headerMedia.js";
 import "../scss/plant.scss";
 
 function renderComp(props) {
   if (props !== null) {
     let { photo_url, common_name, plant_species_name, plant_desc } = props;
     return (
-      <>
-        <div className="plant">
-          {headerPhoto(photo_url)}
-          <div className="plantName">
-            <div className="">{common_name}</div>
-            <i className="">{plant_species_name}</i>
-          </div>
-          <p className="">{plant_desc}</p>
+      <div className="plant">
+        {plantHeaderMedia(photo_url)}
+        <div className="plantName">
+          <div className="">{common_name}</div>
+          <i className="">{plant_species_name}</i>
         </div>
-      </>
+        <p className="pageDesc">{plant_desc}</p>
+      </div>
     );
   } else {
     return <Loading />;
