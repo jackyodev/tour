@@ -52,3 +52,8 @@
 .plants {
   background: linear-gradient(-225deg, #e3fdf5, #ffe6fa)
 }
+
+iframe {
+  width: 100vw;
+  height: 100%;
+}
