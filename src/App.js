@@ -9,6 +9,8 @@ import { AllPlants } from "./components/allPlants";
 import { Nav } from "./components/nav";
 import { Gardens } from "./components/gardens";
 import { Garden } from "./components/garden";
+import { Tour } from "./components/tour";
+
 
 function App() {
   return (
@@ -23,9 +25,7 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/tours">
-            <>
-              <iframe src="https://www.google.com/maps/d/embed?mid=1rCxiPlEztjpkarehSm7Tm5waGQZm1oz1"></iframe>
-            </>
+            <Tour />
           </Route>
           <Route exact path="/gardens">
             <Gardens />
@@ -39,6 +39,10 @@ function App() {
           <Route exact path="/plant">
             <Plant />
           </Route>
+          <Route exact path="/trees">
+          <iframe title="Queens Botanical Garden Trees" src="https://www.google.com/maps/d/embed?mid=1rCxiPlEztjpkarehSm7Tm5waGQZm1oz1"></iframe>
+          </Route>
+       
         </Route>
       </Switch>
     </div>

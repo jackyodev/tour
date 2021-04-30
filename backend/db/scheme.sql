@@ -73,12 +73,12 @@ id SERIAL PRIMARY KEY,
 );
 
 
-\COPY months (month_number, month_name) FROM 'Y:\Projects\tour\backend\db\months.csv' DELIMITER ',' CSV HEADER;--
-\COPY locations (map_number, location_name, thumbnail_url, place_desc)  FROM 'Y:\Projects\tour\backend\db\locations.csv' DELIMITER ',' CSV HEADER;--
-\COPY locationsMedia (location_id, media, media_url)  FROM 'Y:\Projects\tour\backend\db\locationsMedia.csv' DELIMITER ',' CSV HEADER;--
-\COPY birds (bird_name, bird_species_name)  FROM 'Y:\Projects\tour\backend\db\birds.csv' DELIMITER ',' CSV HEADER;--
-\COPY plants (plant_id, plant_species_name, common_name, plant_desc  )  FROM 'Y:\Projects\tour\backend\db\plants.csv' DELIMITER ',' CSV HEADER  encoding 'UTF8';-- 
-\COPY plantsMonths (month_number, common_name)  FROM 'Y:\Projects\tour\backend\db\plantsByMonths.csv' DELIMITER ',' CSV HEADER;--
-\COPY plantsLocations (common_name, location)  FROM 'Y:\Projects\tour\backend\db\plantsByLocations.csv' DELIMITER ',' CSV HEADER;--
-\COPY plantsPhotos (plant_id, plant_species_name, common_name, photo_url)  FROM 'Y:\Projects\tour\backend\db\plantsPhotos.csv' DELIMITER ',' CSV HEADER;--
+\COPY months (month_number, month_name) FROM 'months.csv' DELIMITER ',' CSV HEADER;--
+\COPY locations (map_number, location_name, thumbnail_url, place_desc)  FROM 'locations.csv' DELIMITER ',' CSV HEADER;--
+\COPY locationsMedia (location_id, media, media_url)  FROM 'locationsMedia.csv' DELIMITER ',' CSV HEADER;--
+\COPY birds (bird_name, bird_species_name)  FROM 'birds.csv' DELIMITER ',' CSV HEADER;--
+\COPY plants (plant_id, plant_species_name, common_name, plant_desc  )  FROM 'plants.csv' DELIMITER ',' CSV HEADER  encoding 'UTF8';-- 
+\COPY plantsMonths (month_number, common_name)  FROM 'plantsByMonths.csv' DELIMITER ',' CSV HEADER;--
+\COPY plantsLocations (common_name, location)  FROM 'plantsByLocations.csv' DELIMITER ',' CSV HEADER;--
+\COPY plantsPhotos (plant_id, plant_species_name, common_name, photo_url)  FROM 'plantsPhotos.csv' DELIMITER ',' CSV HEADER;--
 
