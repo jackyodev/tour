@@ -4,6 +4,8 @@
   font-size: 18px;
   height: 100vh;
   scroll-padding: 0 0 0 0;
+  scroll-behavior: smooth;
+
 }
 
 * {

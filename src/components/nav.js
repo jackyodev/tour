@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { RiHome4Fill, RiPlantFill, RiCompass3Fill } from "react-icons/ri";
 
+import { TiTree } from "react-icons/ti";
 import { GiTwirlyFlower } from "react-icons/gi";
 
 import "../scss/nav.scss";
@@ -22,6 +23,9 @@ export function Nav(props) {
       </NavLink>
       <NavLink to="/plants">
         <RiPlantFill /> <span>Plants</span>
+      </NavLink>
+      <NavLink to="/trees">
+        <TiTree /> <span>Trees</span>
       </NavLink>
     </div>
   );
