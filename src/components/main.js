@@ -53,7 +53,6 @@ export function Home() {
 
   return (
     <>
-      <div className="main">
         <div className="top">
           <div className="header_img"></div>
         </div>
@@ -61,7 +60,6 @@ export function Home() {
           <h1>In Bloom</h1>
           <ul className="highlights">{mapHighlights(plantHighlights)}</ul>
         </div>
-      </div>
     </>
   );
 }
