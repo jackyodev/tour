@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+.section {
+  overflow: auto;
+  height: 100%;
+  padding-bottom: 10vh;
+  /* background: linear-gradient(-225deg, #e3fdf5, #ffe6fa); */
+}
+
 .loading {
   height: 100%;
   display: flex;
@@ -48,14 +55,15 @@
 }
 
 .gardens {
-  background: linear-gradient(-225deg, #e3fdf5, #ffe6fa)
+  /* background: linear-gradient(-225deg, #e3fdf5, #ffe6fa) */
 }
 
 .plants {
-  background: linear-gradient(-225deg, #e3fdf5, #ffe6fa)
+  /* background: linear-gradient(-225deg, #e3fdf5, #ffe6fa) */
 }
 
 iframe {
   width: 100vw;
   height: 100%;
+  padding-bottom: 5vh;
 }

@@ -15,6 +15,8 @@ import { Tour } from "./components/tour";
 function App() {
   return (
     <div className="App">
+      <div className = "main" >
+
       <Switch>
         <Route exact path="/">
           <WelcomeScreen />
@@ -22,22 +24,34 @@ function App() {
         <Route path="/*">
           <nav>{Nav()}</nav>
           <Route exact path="/home">
-            <Home />
+            <div className = "section"> 
+              <Home />
+            </div>
           </Route>
           <Route exact path="/tours">
+            <div className = "section"> 
             <Tour />
+            </div>
           </Route>
           <Route exact path="/gardens">
-            <Gardens />
+          <div className = "section"> 
+          <Gardens />
+            </div>
           </Route>
           <Route exact path="/garden">
+            <div className = "section"> 
             <Garden />
+            </div>
           </Route>
           <Route exact path="/plants">
+            <div className = "section"> 
             <AllPlants />
+            </div>
           </Route>
           <Route exact path="/plant">
+            <div className = "section"> 
             <Plant />
+            </div>
           </Route>
           <Route exact path="/trees">
           <iframe title="Queens Botanical Garden Trees" src="https://www.google.com/maps/d/embed?mid=1rCxiPlEztjpkarehSm7Tm5waGQZm1oz1"></iframe>
@@ -45,8 +59,11 @@ function App() {
        
         </Route>
       </Switch>
+
+      </div>
+    
     </div>
-  );
+  )
 }
 
 export default App;

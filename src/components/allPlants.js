@@ -9,7 +9,7 @@ function renderComp(prop) {
       <div className="plants">
         <h1 className="pageTitle">All Plants</h1>
         <nav> </nav>
-        <ul className="highlights">{Main.mapHighlights(prop)}</ul>;
+        <ul className="highlights">{Main.mapHighlights(prop)}</ul>
       </div>
     );
   } else return <Loading />;
