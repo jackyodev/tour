@@ -2,6 +2,8 @@ import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
+
+
 import { WelcomeScreen } from "./components/welcome";
 import { Home } from "./components/main";
 import { Plant } from "./components/plant";

@@ -1,0 +1,30 @@
+.react-tabs__tab-list {
+    background-color: rgb(240, 240, 240);
+    color: #F17B30;
+    font-weight: 500;
+}
+
+.react-tabs__tab:hover{
+    color: #16912B;
+}
+.react-tabs__tab--selected {
+    font-weight: 400;
+    color: #16912B;
+}
+
+.tabs_panels {
+    overflow: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;  
+
+    img {
+        width: clamp(300px, 40%, 500px);
+        margin: 1rem;
+    }
+
+    p{
+        text-align: left;
+        margin: 1rem;
+    }
+}
