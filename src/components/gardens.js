@@ -73,7 +73,7 @@ export function Gardens() {
     return () =>
       window.removeEventListener('scroll', listenToScroll)
       clearTimeout(timer)
-  }, []);
+  }, [])
 
   return renderComp(allGardens);
 }
