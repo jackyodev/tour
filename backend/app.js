@@ -22,11 +22,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-// /*
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname + "/../frontend/build/")));
-// }
-// */
+
+if (process.env.NODE_ENV === "production") {
+   app.use(express.static(path.join(__dirname + "/../frontend/build/")));
+}
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/../frontend/build/index.html"));
+});
+
+
 
 app.use("/api/birds", birdsRouter);
 app.use("/api/plants", plantsRouter);
