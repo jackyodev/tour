@@ -14,23 +14,33 @@ const urlsToArray = (url) => {
 };
 
 const mapHighlights = (array) => {
-  return array.map((el, i) => {
-    urlsToArray(el.photo_urls);
-    return (
-      <li key={i}>
-        <Link to={`/plant/?id=${el.plant_id}`}>
-          <div className="picture">
-            <img
-              id="picture"
-              alt={el.plant_species_name}
-              src={urlsToArray(el.photo_urls)}
-            />
-            <p>{el.common_name}</p>
-          </div>
-        </Link>
-      </li>
-    );
-  });
+
+
+  console.log( "HIGHT LIGHTS");
+
+  if(array) {
+    return array.map((el, i) => {
+      urlsToArray(el.photo_urls);
+      return (
+        <li key={i}>
+          <Link to={`/plant/?id=${el.plant_id}`}>
+            <div className="picture">
+              <img
+                id="picture"
+                alt={el.plant_species_name}
+                src={urlsToArray(el.photo_urls)}
+              />
+              <p>{el.common_name}</p>
+            </div>
+          </Link>
+        </li>
+      );
+    });
+  }
+
+  else 
+  return <h1> Hello World </h1>
+ 
 };
 
 export function Home() {

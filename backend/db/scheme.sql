@@ -7,7 +7,7 @@
 DROP DATABASE IF EXISTS qbgapp;
 CREATE DATABASE qbgapp;
 
-\c qbgapp;
+-- \c qbgapp;
 
 CREATE TABLE months
 (
