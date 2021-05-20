@@ -47,9 +47,7 @@ export function Gardens() {
       document.documentElement.clientHeight
   
     const scrolled = winScroll / height
-  
-    console.log(scrolled)
-  }
+    }
 
 
   useEffect(() => {
@@ -67,12 +65,12 @@ export function Gardens() {
 
     const timer = setTimeout(() => {
       fetchData();
+      window.removeEventListener('scroll', listenToScroll)
     }, 500);
 
     //the return callback is to cleanup the useEffect
     return () =>
-      window.removeEventListener('scroll', listenToScroll)
-      clearTimeout(timer)
+      clearTimeout(timer)      
   }, [])
 
   return renderComp(allGardens);

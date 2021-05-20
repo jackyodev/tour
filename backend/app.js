@@ -27,17 +27,16 @@ if (process.env.NODE_ENV === "production") {
    app.use(express.static(path.join(__dirname + "/../frontend/build/")));
 }
 
+app.use("/api/birds", birdsRouter);
+app.use("/api/plants", plantsRouter);
+app.use("/api/gardens", gardensRouter);
+app.use("/*", indexRouter);
+
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/../frontend/build/index.html"));
 });
 
-
-
-app.use("/api/birds", birdsRouter);
-app.use("/api/plants", plantsRouter);
-app.use("/api/gardens", gardensRouter);
-
-app.use("/*", indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

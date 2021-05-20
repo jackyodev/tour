@@ -220,7 +220,7 @@ overburdened sewer system.</p>
 
 <p>Buildings use more energy for heating and air conditioning
 than anything else. To save energy, the Visitor
-&amp; Administration Building’s Geothermal System taps the heat of the earth to
+ Administration Building’s Geothermal System taps the heat of the earth to
 provide heating and cooling for the building and eliminates the need to burn
 any fossil fuels on-site.</p>
 
@@ -266,7 +266,7 @@ exchangers.</p>
 <h3>Construction Waste Management</h3>
 
 <p>Over 75% of the waste produced during the construction of
-the Visitor &amp; Administration Building was diverted from the landfill
+the Visitor  Administration Building was diverted from the landfill
 through recycling and reuse. </p>
 
 
@@ -320,7 +320,7 @@ on the arrays, which changes throughout the year and because of season.</p>
 be disposed of in landfills or incinerators, and reduces the resources used to
 produce new products and material.
 
-In the Visitor &amp; Administration Building, office materials and furnishings
+In the Visitor  Administration Building, office materials and furnishings
 incorporate a high percentage of recycled content, and many can be recycled at
 the end of their useful life. For example, the carpeting used in some offices
 is a cradle-to-cradle certified product, meaning it can be continually recycled
@@ -417,7 +417,7 @@ city’s overburdened sewage system.</p>
 
 <h3>Sustainable Siting</h3>
 
-<p>The Visitor &amp; Administration Building is built on the
+<p>The Visitor  Administration Building is built on the
 site of the Garden’s former parking lot. Putting our building here protects
 existing green space and maximizes space for new landscapes. It is located
 close to public transportation, allowing staff and visitors to travel to the
@@ -473,7 +473,7 @@ wetland plants, where organic nutrients, metals and other contaminants are
 naturally treated and absorbed by the plants.
 
 After it is cleaned, the water is piped underground to splash out of the Entry
-Plaza fountain. Then it flows alongside the Visitor &amp; Administration
+Plaza fountain. Then it flows alongside the Visitor  Administration
 Building back to the Cleansing Biotope to begin the cycle again.
 
 Recycling rainwater conserves fresh water and helps prevent water pollution in

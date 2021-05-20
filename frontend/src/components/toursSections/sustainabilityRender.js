@@ -8,32 +8,33 @@ export const sustainabilityRender = (state) => {
         the community.
       </div>
       <div>
-        The Garden&rsquo;s <a>Master Plan of 2001</a> launched the Sustainable
+        The Garden's <i>Master Plan of 2001</i> launched the Sustainable
         Landscapes and Buildings Project. As the name implies, the project is
         much more than buildings. It includes new plants, many of which are
         native species; bioswales to collect stormwater and reduce wear-and-tear
-        on New York City&rsquo;s combined sewer system; water recycling systems;
-        the new Horticulture/Maintenance Building; the revolutionary Visitor
-        &amp; Administration Center; and the transformation of our existing
+        on New York City's combined sewer system; water recycling systems;
+        the new Horticulture/Maintenance Building; the revolutionary Visitor 
+        Administration Center; and the transformation of our existing
         parking lot into a 125-space parking garden which began in September
         2008.
       </div>
-      <div>On September 27, 2007, Mayor Michael Bloomberg, </div>
-      <p>
+
+      <p>On September 27, 2007, Mayor Michael Bloomberg,
         Borough President Helen Marshall, whose office has been the lead
         supporter of the Sustainable Buildings and Landscape Project, and
-        numerous other dignitaries officially opened our Visitor &amp;
+        numerous other dignitaries officially opened our Visitor 
         Administration Center, the most advanced green building in New York
         City. It was a landmark event for the Garden as Mayor Bloomberg cited
-        the Visitor &amp; Administration Center as a major asset in the
-        city&rsquo;s PlaNYC 2030, the ambitious program to cut New York
-        City&rsquo;s carbon emissions by 30%.
+        the Visitor  Administration Center as a major asset in the
+        city's PlaNYC 2030, the ambitious program to cut New York
+        City's carbon emissions by 30%.
       </p>
+
       <p>
         The new landscapes being installed are functional, meaning the plants
         and soil all play a role in contributing to a healthier habitat. Many of
         the plants in these new landscapes are indigenous to the New York area,
-        including those in the Visitor &amp; Administration Building&rsquo;s
+        including those in the Visitor  Administration Building's
         cleansing biotope, constructed wetland, bioswale, and green roof. The
         structure itself is built on the former site of a parking lot,
         maximizing the space for new landscapes and optimizing reuse. In
@@ -48,7 +49,6 @@ export const sustainabilityRender = (state) => {
         seeds, and implementing controlled burns.
       </p>
       <p>
-        <br />
         To keep our collections free of unwanted pests and weeds while
         protecting the environment, the Garden uses Integrated Pest Management
         (IPM). This is a systematic approach to managing pests that focuses on
@@ -58,12 +58,12 @@ export const sustainabilityRender = (state) => {
         fertilizers in our landscapes. The Garden new Plants in Community
         gardens are organized by plant family and feature native plants in a
         garden setting. More than 15 plant families are highlighted in the
-        Plants in Community garden around the Visitor &amp; Administration
+        Plants in Community garden around the Visitor  Administration
         Building. These gardens are grouped according to plant families, such as
         Rosaceae (Rose Family), Liliaceae (Lily Family), and Compositae
         (Aster/Daisy/Sunflower Family).
       </p>
-      <h1>
+      <h2>
         QBG has the opportunity to share with our visitors the critical role
         that plants play both culturally and ecologically in our lives as well
         as the lives of the creatures that share our ecosystems. At the Garden,
@@ -71,31 +71,30 @@ export const sustainabilityRender = (state) => {
         gardens and habitats that will provide diverse habitat, become a
         functional part of the local hydrology, and offer new opportunities for
         visitors to connect to plants.
-      </h1>
+      </h2>
       <h1>Benefits:</h1>
       <p>
         Many people have never had the chance to experience healthy native
         habitats that once occupied New York since many have been changed by
         development, pollution, and the introduction of invasive species of
         plants and animals. Over many years, and with proper stewardship
-        practices, the Garden&rsquo;s plant communities will showcase the unique
+        practices, the Garden's plant communities will showcase the unique
         role that plants play both culturally and ecologically and provide seed
         sources for future rebuilding and restoration of landscapes in and
         around New York.
       </p>
-      <hr />
+
       <p>
-        <br />
         Interior surfaces are left largely unfinished, revealing the raw
         building materials such as steel, wood, and concrete. The carpet used in
-        selected areas of the Visitor &amp; Administration Building can be
+        selected areas of the Visitor  Administration Building can be
         endlessly recycled into new carpeting. Interior products, such as
         fabrics, sealants, caulks, and paints, contain no or very low levels of
         volatile organic compounds (VOCs). Most wood-based materials are Forest
-        Stewardship Council certified. In the Garden&rsquo;s new structures,
+        Stewardship Council certified. In the Garden's new structures,
         building materials and furnishings incorporate a high percentage of
         recycled content, and over 20% are produced within 500 miles. Over 75%
-        of the waste produced during the construction of the Visitor &amp;
+        of the waste produced during the construction of the Visitor 
         Administration Building has been diverted from the landfill through
         recycling and reuse.
       </p>
@@ -120,59 +119,58 @@ export const sustainabilityRender = (state) => {
       <hr />
       <h1>Strategies:</h1>
       <p>
-        Gray water from the Visitor &amp; Administration Building&rsquo;s sinks,
+        Gray water from the Visitor  Administration Building's sinks,
         dishwashers, and shower is piped to a constructed wetland, while
-        rainwater cascades off the terrace roof into a <a>cleansing biotope</a>.
+        rainwater cascades off the terrace roof into a <i>cleansing biotope</i>.
         In both places, water is filtered and treated naturally through
         bacterial activity on the roots of carefully selected plants. The
         treated gray water is returned to the building for use in toilet
         flushing, while the cleansed rainwater supplies a meandering water
         feature and fountain. Low maintenance, drought-resistant plants are used
         in Garden landscapes to reduce the need for irrigation. Throughout the
-        project, rainwater is filtered and absorbed into the soil through{" "}
-        <a>bioswales</a> instead of entering the city&rsquo;s combined sewer,
+        project, rainwater is filtered and absorbed into the soil through
+        <i>bioswales</i> instead of entering the city's combined sewer,
         reducing pollution in Long Island Sound.
       </p>
       <p>
-        <a>A green roof planted</a> with mostly native plant species absorbs
-        rainwater that falls on the Visitor &amp; Administration Building
+        <i>A green roof planted</i> with mostly native plant species absorbs
+        rainwater that falls on the Visitor  Administration Building
         auditorium. Rainwater that falls on the Horticulture/Maintenance
         Building is collected and stored in an underground cistern. A piping
-        system connects this cistern to the building&rsquo;s storage and garage
+        system connects this cistern to the building's storage and garage
         space, where the water is used to wash vehicles and tools.
       </p>
       <h1>Benefits:</h1>
       <p>
         Conserving fresh water and recycling water to use in place of freshwater
-        reduces the burden on the city&rsquo;s water supply system and
+        reduces the burden on the city's water supply system and
         vulnerability to drought.
       </p>
       <p>
         Collecting, storing, and recycling gray water and rainwater onsite
-        diverts it from the city&rsquo;s costly, energy-intensive wastewater
+        diverts it from the city's costly, energy-intensive wastewater
         treatment process. These strategies also prevent the release of polluted
-        water into local waterways during large storms, when the city&rsquo;s
+        water into local waterways during large storms, when the city's
         wastewater treatment system is overwhelmed.
       </p>
       <hr />
       <h1>Strategies:</h1>
       <p>
-        <br />
         In the Horticulture/Maintenance Building, translucent siding allows
         daylight to reach interior workspaces, reducing the need for electrical
         lighting.
-        <br /> The Visitor &amp; Administration Building&rsquo;s orientation and
+        <br /> The Visitor  Administration Building's orientation and
         long, narrow architecture allow 90% of the interior space to receive
-        daylight and maximize natural ventilation. A <a>
+        daylight and maximize natural ventilation. A <i>
           geothermal system
-        </a>{" "}
-        uses the earth&rsquo;s constant temperature to provide seasonal heating
-        and cooling. Rooftop <a>photovoltaic cells</a> transform sunlight into
+        </i>
+        uses the earth's constant temperature to provide seasonal heating
+        and cooling. Rooftop <i>photovoltaic cells</i> transform sunlight into
         electricity to operate high-efficiency ventilation and lighting systems.
       </p>
       <h1>Benefits:</h1>
       <p>
-        Overall, the Visitor &amp; Administration Building will use
+        Overall, the Visitor  Administration Building will use
         approximately 40% less energy from nonrenewable sources than a typical
         building of its size. Every year this will prevent the release of over
         forty tons of the greenhouse gas CO2 into the atmosphere, the equivalent
@@ -180,7 +178,6 @@ export const sustainabilityRender = (state) => {
         by over $7,000, a savings passed on to New York City taxpayers.
       </p>
       <p>
-        {" "}
         The Queens Botanical Garden is located on 39 acres of land owned by New
         York City, the legacy of the 1939 and 1964 World's Fairs. It is open to
         the public, and admission is free.
@@ -232,10 +229,10 @@ export const sustainabilityRender = (state) => {
       <p>
         The now-reclaimed land on which the Queens Botanical Garden is located
         was famously described in F. Scott Fitzgerald's 1925 book The Great
-        Gatsby as "a valley of ashes."{" "}
+        Gatsby as "a valley of ashes."
       </p>
       <div>
-        {" "}
+        
         Today, the Garden is located at the nexus of the most ethnically diverse
         county in the United States. More than 130 languages and dialects are
         spoken in the area.
@@ -248,7 +245,7 @@ export const sustainabilityRender = (state) => {
           energy to green landscaping and composting. The building design is the
           result of a community-driven planning process. A variety of assembly
           spaces within the Center, both open to the landscape and sheltered
-          from the elements, shape visitors' experience of the Gardens.{" "}
+          from the elements, shape visitors' experience of the Gardens.
         </p>
       </div>
       <div>
@@ -312,8 +309,8 @@ export const sustainabilityRender = (state) => {
         wall.
       </p>
       <p>
-        {" "}
-        The building is nestled among mature trees on the{" "}
+        
+        The building is nestled among mature trees on the
         <strong>site of a former parking lot</strong>.
       </p>
       <div>
@@ -327,7 +324,7 @@ export const sustainabilityRender = (state) => {
         </p>
         <hr />
         <p>
-          The community-driven planning process emphasized the importance of{" "}
+          The community-driven planning process emphasized the importance of
           <strong>water as a resource vital to all cultures</strong>. As a
           result, the project team used water to unify the building and the
           landscape. Through the use of water, the team hoped to recall the
@@ -335,12 +332,8 @@ export const sustainabilityRender = (state) => {
           water conservation and living landscapes.
         </p>
         <p>
-          During rainy days,{" "}
-          <strong>
-            water cascades off of the sheltering canopy roof and into a channel
-            flowing between the main building and the auditorium
-          </strong>
-          . The captured rainwater moves through biotope pools filled with
+          During rainy days, water cascades off of the sheltering canopy roof and into a channel
+            flowing between the main building and the auditorium. The captured rainwater moves through biotope pools filled with
           gravel and native wetland species that cleanse the rainwater before it
           is piped underground. The water then emerges at the entry plaza
           fountain, moves through the landscape via a meandering stream, and
@@ -354,7 +347,7 @@ export const sustainabilityRender = (state) => {
           roof's plantings.
         </p>
         <p>
-          The Center is composed of three interconnected spaces:{" "}
+          The Center is composed of three interconnected spaces:
           <strong>the forecourt</strong> and <strong>roof canopy</strong>, the
           linear reception and administration building, and the auditorium,
           which is sheltered by a sloping green roof. Each part of the structure
@@ -376,7 +369,7 @@ export const sustainabilityRender = (state) => {
         glass doors and windows slide open to provide cross ventilation.
       </div>
       <div>
-        {" "}
+        
         The semi-intensive green roof of the auditorium, planted with native
         species, provides thermal insulation as well as acoustical insulation
         from the flight path overhead. Skylights and a long window with a
@@ -401,7 +394,7 @@ export const sustainabilityRender = (state) => {
       <p>
         The project team left the structure and systems exposed whenever
         possible; where paints, finishes, and carpeting were used, the team
-        selected products with low chemical emissions.{" "}
+        selected products with low chemical emissions.
       </p>
       <p>
         The team also followed a construction indoor air quality plan that
@@ -417,7 +410,7 @@ export const sustainabilityRender = (state) => {
         A greywater system that is separate from the stormwater system uses an
         adjacent wetland to cleanse and repurpose building water for flushing
         toilets, reducing the project's potable water consumption by 55%. The
-        project also features waterless urinals and composting toilets.{" "}
+        project also features waterless urinals and composting toilets.
       </p>
       <p>
         The project goal was to not only generate energy to meet building needs,
@@ -437,7 +430,7 @@ export const sustainabilityRender = (state) => {
         natural ventilation and daylighting. 84% of interior spaces receive
         daylight and all occupied rooms feature operable windows. The
         brise-soleil is designed to provide thermal comfort, consistent light
-        levels and full views of the surrounding garden.{" "}
+        levels and full views of the surrounding garden.
       </p>
       <p> </p>
       <p>
@@ -451,7 +444,7 @@ export const sustainabilityRender = (state) => {
         hemlock was used for the concrete formwork, and black locust certified
         to Forest Stewardship Council (FSC) standards was used for the bridges,
         outdoor benches, and brise-soleil. The building siding is FSC-certified
-        western red cedar.{" "}
+        western red cedar.
       </p>
       <p>
         The wallboard, tile, carpet, office systems, and bathroom partitions all
@@ -492,14 +485,14 @@ export const sustainabilityRender = (state) => {
         construction. Mayor Michael Bloomberg opened the Center, praising it as
         a prototype for future buildings and an important asset in the
         development of PlaNYC 2030, the City program for implementing green
-        practices and reducing carbon emissions 30% by the year 2030.{" "}
+        practices and reducing carbon emissions 30% by the year 2030.
       </p>
       <p>
         There were challenges during the building process. As the first project
         in the city designed to attain a LEED Platinum rating, the team was
         largely inexperienced. We were guided by consultants and used the
         construction of a maintenance building for the Garden as a practice
-        project. New York State's &ldquo;Wick&rsquo;s Law&rdquo; necessitated
+        project. New York State's &ldquo;Wick's Law&rdquo; necessitated
         the separation of construction trades, but the design of the building
         systems was heavily integrated. Careful documentation of responsibility
         was essential. Contractors with good construction standards easily
@@ -507,7 +500,7 @@ export const sustainabilityRender = (state) => {
         air quality inspections.
       </p>
       <p>
-        {" "}
+        
         We learned that green design involves rethinking the way we design
         buildings and manage construction processes. Green design influenced the
         form of the whole building and was a driving force behind our design. If
@@ -645,7 +638,7 @@ export const sustainabilityRender = (state) => {
           Landscape architect David Yocca Conservation Design Forum Elmhurst, IL
         </li>
         <li>
-          Environmental building consultant Geoff Hurst Viridian Energy &amp;
+          Environmental building consultant Geoff Hurst Viridian Energy 
           Environmental, LLC New York, NY
         </li>
         <li>
@@ -658,7 +651,7 @@ export const sustainabilityRender = (state) => {
         </li>
         <li>Electrical engineer Arie Barr AARCO Electric Brooklyn, NY</li>
         <li>
-          Plumbing engineer Jeff Huang Pinnacle Plumbing &amp; Heating
+          Plumbing engineer Jeff Huang Pinnacle Plumbing  Heating
           Corporation Flushing, NY
         </li>
         <li>
@@ -675,7 +668,7 @@ export const sustainabilityRender = (state) => {
           Morganville, NJ
         </li>
         <li>
-          Exterior wall consultant Israel Berger &amp; Associates New York, NY
+          Exterior wall consultant Israel Berger  Associates New York, NY
         </li>
         <li>
           Specialty consulting Katrin Scholz-Barth Katrin Scholz-Barth
@@ -732,7 +725,7 @@ export const sustainabilityRender = (state) => {
         <li>Alex Kveton, Milgo Industrial, Inc.</li>
       </ul>
       <p>
-        <strong>Dimensions:</strong> 2 0&rsquo;6&rdquo; h. x 19&rsquo; w.
+        <strong>Dimensions:</strong> 2 0'6&rdquo; h. x 19' w.
       </p>
       <p>
         <strong>Weight:</strong> 11,000 lbs.
@@ -782,20 +775,20 @@ export const sustainabilityRender = (state) => {
         bays interrupted by planted bioswales that manage stormwater on site. It
         include 6 ADA compliant spaces, 92 standard spaces and 19 overflow
         spaces (composed of grass grown in a gravel medium) for 117 total
-        spaces. These new landscapes all contribute to QBG&rsquo;s efforts to
+        spaces. These new landscapes all contribute to QBG's efforts to
         foster environmental stewardship and enhance the visitor experience.
       </p>
       <p>
-        {" "}
-        Queens Botanical Garden&rsquo;s Parking Garden is another innovative
+        
+        Queens Botanical Garden's Parking Garden is another innovative
         component of the Sustainable Landscapes and Buildings Project,
         furthering the environmental vision outlined in our Master Plan.
       </p>
       <div>
         <p>
           Demonstrating a more environmentally-sensitive method of managing
-          stormwater onsite, the Parking Garden will help keep our city&rsquo;s
-          rivers and bays clean by easing the burden on the city&rsquo;s sewer
+          stormwater onsite, the Parking Garden will help keep our city's
+          rivers and bays clean by easing the burden on the city's sewer
           system, while offering visitors comfortable and inspiring gardens.
           Like other features of QBG, the Parking Garden showcases sustainable
           practices in design, construction, and operations to protect the
@@ -806,9 +799,9 @@ export const sustainabilityRender = (state) => {
           were made possible by a dedicated team of professionals from Queens
           Botanical Garden, city agencies, consultants and contractors. Queens
           Botanical Garden is thankful for Leadership Support and the
-          environmental vision of New York City&rsquo;s elected leaders
+          environmental vision of New York City's elected leaders
           including the New York City Office of the Mayor, Queens Borough
-          President&rsquo;s Office, New York City Council, New York City
+          President's Office, New York City Council, New York City
           Department of Cultural Affairs, and New York City Department of Design
           and Construction.
         </p>
@@ -816,7 +809,7 @@ export const sustainabilityRender = (state) => {
       <p> </p>
       <p>
         QBG's Parking Garden demonstrates an alternate way of treating
-        stormwater runoff to keep our waterways cleaner.{" "}
+        stormwater runoff to keep our waterways cleaner.
       </p>
       <p>
         Located in what were originally wetlands, the Parking Garden is
@@ -832,17 +825,17 @@ export const sustainabilityRender = (state) => {
         Permeable pavers rest on three tiers of bluestone gravel of increasing
         size, allowing water to penetrate deeply into the soil. The structure
         also facilitates the growth of beneficial oil-eating bacteria that break
-        down leaking car fluids and remove them from the environment.{" "}
+        down leaking car fluids and remove them from the environment.
       </p>
       <p>
-        {" "}
+        
         Additional low-intensity parking areas are stabilized with gravel-grass.
         These flat surfaces are made of large bluestone gravel and seeded with
         native grasses. The combination absorbs stormwater quickly and is
         attractive and green when not in use.
       </p>
       <p>
-        In combination with our Visitor &amp; Administration Building, LEED&reg;
+        In combination with our Visitor  Administration Building, LEED&reg;
         Platinum certified by the U.S. Green Building Council, and upcoming
         Sustainable Pathways project, QBG will be capable of diverting 95% of
         stormwater that falls on our 39 acres from the city's sewer system.
