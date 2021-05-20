@@ -14,10 +14,7 @@ const urlsToArray = (url) => {
 };
 
 const mapHighlights = (array) => {
-
-  console.log(array);
-
-  if(array != undefined) {
+  if(array !== undefined) {
     return array.map((el, i) => {
       urlsToArray(el.photo_urls);
       return (
@@ -49,7 +46,6 @@ export function Home() {
     axios
       .get(`/api/plants/months/${getDayName()}`)
       .then((res) => {
-        console.log(res);
         setPlantHighlights(res.data.data);
       })
       .catch((err) => {

@@ -1,21 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
-import { Loading } from "./subComponents/loading.js";
+// import { Loading } from "./subComponents/loading.js";
 import "../scss/garden.scss";
-import { NavLink } from "react-router-dom";
-import { render } from "@testing-library/react";
+// import { NavLink } from "react-router-dom";
+// import { render } from "@testing-library/react";
 import { historyRender } from "../components/toursSections/historyRender.js"
 import { sustainabilityRender } from "../components/toursSections/sustainabilityRender.js"
 import { buildingRender } from "../components/toursSections/buildingRender.js"
 import { biotopeRender } from "../components/toursSections/biotopeRender.js"
-
-
 import "../scss/tour.scss";
-
-
 
 const tourSection = [
   {
@@ -23,7 +19,6 @@ const tourSection = [
     img: "https://queensbotanical.org/wp-content/uploads/2019/01/Roses.jpg",
     url: "history",
   },
-    ,
     {
       section: "Sustainability",
       img:

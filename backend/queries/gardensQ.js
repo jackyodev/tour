@@ -20,7 +20,6 @@ const getAllGardens = (req, res) => {
 
 const getOneGarden = (req, res) => {
   const garden_id = req.params.id;
-  console.log(garden_id);
   let getDesc = () => {
     return db.one(
       `SELECT locations.MAP_NUMBER, LOCATION_NAME, locations.place_desc FROM LOCATIONS WHERE MAP_NUMBER = '${garden_id}'`,

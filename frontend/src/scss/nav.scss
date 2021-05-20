@@ -8,12 +8,8 @@ nav {
 
   div {
     display: flex;
-    width: 100%;
-
     justify-content: space-around;
-    text-align: right;
-    background-color: rgb(251, 251, 251);
-
+    background-color: rgb(247, 247, 247);
 
     a {
       font-size: .55em;
@@ -22,15 +18,12 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: #F17B30;
-      border-radius: .5em;
-      margin: 1vh;
-      min-width: 75px;
+      color: #ff6200;
       text-decoration: none;
       padding: min(10px, 1vh);
 
       svg {
-        font-size: 2em;
+        font-size: 1.75rem;
       }
 
       &:hover {

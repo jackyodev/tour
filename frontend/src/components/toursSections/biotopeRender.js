@@ -1,7 +1,7 @@
 export const biotopeRender = (state) => {
   return (
     <>
-    <img src = "https://queensbotanical.org/wp-content/uploads/2019/02/with-labels-1024x541.png" />
+    <img alt = "diagram of how a leansing biotope works" src = "https://queensbotanical.org/wp-content/uploads/2019/02/with-labels-1024x541.png" />
       <h1>Cleansing Biotope </h1>
       <p>
         The Garden’s Cleansing Biotope, located at the western end of the
