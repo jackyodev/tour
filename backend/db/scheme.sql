@@ -4,10 +4,13 @@
 
 --\COPY comments (body, users_id, songs_id) FROM './comments.csv' DELIMITER ',' CSV HEADER;--
 
-DROP DATABASE IF EXISTS qbgapp;
-CREATE DATABASE qbgapp;
+-- DROP DATABASE IF EXISTS qbgapp;
+-- CREATE DATABASE qbgapp;
 
 -- \c qbgapp;
+
+
+const path = "E:\Projects\tour\backend\db"
 
 CREATE TABLE months
 (
