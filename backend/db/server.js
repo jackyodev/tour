@@ -9,7 +9,15 @@ const cn = {
   max: 30, // use up to 30 connections
 };
 
-const connectionString = process.env.DATABASE_URL || cn;
+
+const config = parse(process.env.DATABASE_URL);
+
+config.ssl = {
+  rejectUnauthorized: false
+};
+
+
+const connectionString =  config || cn;
 
 const db = pgp(connectionString);
 
