@@ -4,9 +4,9 @@ const pgp = require("pg-promise")();
 let ssl = null;
 let pool = null; 
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'deploy') {
    ssl = {rejectUnauthorized: false};
-   console.log(process.env.DATABASE_URL);
+
    pool = {
     connectionString: process.env.DATABASE_URL,
     ssl: {
@@ -24,7 +24,7 @@ const cn = {
   max: 30, // use up to 30 connections
 };
 
-const connectionString =  pool
+const connectionString = pool || cn
 
 const db = pgp(connectionString);
 
