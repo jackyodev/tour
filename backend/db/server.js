@@ -5,9 +5,6 @@ const pgp = require("pg-promise")({});
 
 
 let ssl = null;
-if (process.env.NODE_ENV === 'development') {
-   ssl = {rejectUnauthorized: false};
-}
 
 const local = {
   host: "localhost",
@@ -16,11 +13,15 @@ const local = {
   user: "postgres",
   password: "admin",
   max: 30, // use up to 30 connections
+  ssl:ssl
 };
 
 let config = local;
 
-if (process.env.NODE_ENV) {
+if (process.env.NODE_ENV === 'development') { 
+
+  ssl = {rejectUnauthorized: false};
+
 config = {
   connectionString: process.env.DATABASE_URL,
   max: 30,
