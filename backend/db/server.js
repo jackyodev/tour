@@ -1,4 +1,5 @@
 const pgp = require("pg-promise")({});
+const parse = require("pg-connection-string")
 
 const cn = {
   host: "localhost",
@@ -9,13 +10,17 @@ const cn = {
   max: 30, // use up to 30 connections
 };
 
+let config; 
 
-const config = parse(process.env.DATABASE_URL);
+if(process.env.DATABASE_URL) {
+   config = parse(process.env.DATABASE_URL);
+  config.ssl = {
+    rejectUnauthorized: false
+  };
+}
 
-config.ssl = {
-  rejectUnauthorized: false
-};
-
+https://www.javaniceday.com/post/pg-promise-self-signed-certificate-error-in-postgres
+//https://help.heroku.com/MDM23G46/why-am-i-getting-an-error-when-i-upgrade-to-pg-8
 
 const connectionString =  config || cn;
 
