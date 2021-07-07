@@ -4,7 +4,7 @@ const pgp = require("pg-promise")();
 let ssl = null;
 let pool = null; 
 
-if (process.env.NODE_ENV === 'deploy') {
+if (process.env.NODE_ENV === 'production') {
    ssl = {rejectUnauthorized: false};
 
    pool = {
