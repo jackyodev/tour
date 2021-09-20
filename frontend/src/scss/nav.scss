@@ -12,13 +12,13 @@ nav {
     background-color: rgb(247, 247, 247);
 
     a {
-      font-size: .55em;
+      font-size: 0.55em;
       font-family: Arial;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: #ff6200;
+      color: #c92965;
       text-decoration: none;
       padding: min(10px, 1vh);
 
@@ -27,11 +27,30 @@ nav {
       }
 
       &:hover {
-        color: hsl(130, 74%, 25%);
+        color: hsl(124, 60%, 15%);
       }
     }
-
   }
+}
 
+@media screen and (min-width: 768px) {
+  nav {
+    border: none;
+    position: relative;
+    max-width: 5em;
 
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      background-color: rgb(236, 185, 42);
+
+      a {
+      color: white;
+
+        height: 100%;
+      }
+    }
+  }
 }

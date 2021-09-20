@@ -47,6 +47,7 @@
   flex-wrap: wrap;
 
 
+
   li {
     box-shadow: 1px 1px 5px #000000c9;
     font-size: 1em;
@@ -57,19 +58,14 @@
     width: 20vw;
     min-width: 250px;
 
-    @media screen and (max-width: 768px) {
-      width: 100%;
-      min-width: 100%;
-      overflow: hidden;
-
-    }
-
     a {
+      display: flex;
       cursor: pointer;
       margin: 0;
       padding: 0;
       position: relative;
       text-decoration: none;
+      background-color: rebeccapurple;
 
       .picture {
         position: relative;
@@ -110,5 +106,57 @@
 
     }
 
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      min-width: 100%;
+      overflow: hidden;
+    }
+
+
+
   }
+}
+
+
+
+@media screen and (min-width: 767px) {
+
+  .main {
+    display: flex;
+  }
+
+  .section {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    
+
+
+    .top {
+      display: none;
+      height: 250%;
+      width: 35em;
+    }
+
+    .body, .gardens, .garden, .plants, .plant{
+      width: 100%;
+      height: auto;
+    }
+
+
+  }
+
+
+  .pageTitle {
+    box-shadow: none;
+    font-size: 3em;
+    font-weight: bold;
+    width: 100%;
+  }
+
+
+
+
 }
