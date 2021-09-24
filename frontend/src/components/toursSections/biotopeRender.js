@@ -1,6 +1,6 @@
 export const biotopeRender = (state) => {
   return (
-    <>
+    <div className = "tab">
     <img alt = "diagram of how a leansing biotope works" src = "https://queensbotanical.org/wp-content/uploads/2019/02/with-labels-1024x541.png" />
       <h1>Cleansing Biotope </h1>
       <p>
@@ -42,6 +42,6 @@ export const biotopeRender = (state) => {
         areas. All of the stormwater that falls on the parking surface of the
         Parking Garden is also managed by bioswales.
       </p>
-    </>
+    </div>
   );
 };

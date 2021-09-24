@@ -16,7 +16,7 @@ function renderComp(array) {
             <p> {el.map_number}</p>
           </div>
           <Link to={`/garden/?id=${el.map_number}`}>
-            <div className="garden picture">
+            <div className="gardenPicture">
               <img id="picture" alt={el.location_name} src={el.thumbnail_url} />
             </div>
             <p> {el.location_name}</p>
@@ -27,7 +27,7 @@ function renderComp(array) {
 
     return (
       <div className="gardens">
-        <h1 className="pageTitle"> All Gardens </h1>
+        <h1 className="pageTitle"> Locations </h1>
         <ul className="highlights"> {mapArray}</ul>
       </div>
     );

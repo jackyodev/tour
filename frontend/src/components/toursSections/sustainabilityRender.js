@@ -1,6 +1,6 @@
 export const sustainabilityRender = (state) => {
   return (
-    <>
+    <div className = "tab">
       <div>
         Queens Botanical Garden teaches and practices sustainability in design,
         construction, and operations support; environmental stewardship;
@@ -841,6 +841,6 @@ export const sustainabilityRender = (state) => {
         stormwater that falls on our 39 acres from the city's sewer system.
       </p>
       <p></p>
-    </>
+    </div>
   );
 };

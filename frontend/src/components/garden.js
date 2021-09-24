@@ -13,7 +13,7 @@ function renderComp(props) {
 
     return (
       <div className="garden">
-        <h1 className="pageTitle">
+        <h1 className="gardenTitle">
           {map_number}. {location_name}
         </h1>
         {gardenHeaderMedia(props.media)}

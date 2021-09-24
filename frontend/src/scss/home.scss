@@ -5,7 +5,7 @@
 
 .top {
   height: 25vh;
-  border-bottom: .5px solid gray;
+  border-bottom: 0.5px solid gray;
 
   .header_img {
     background-image: url("https://images.unsplash.com/photo-1457282168619-2383c79b278d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1954&q=80");
@@ -18,15 +18,12 @@
   }
 }
 
-
-
 .body {
-
   // background-color: #ffffff;
   // background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d9d7db' fill-opacity='0.32' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 
   h1 {
-    background-color: #16912B;
+    background-color: #16912b;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
@@ -46,35 +43,27 @@
   justify-content: center;
   flex-wrap: wrap;
 
-
   li {
     box-shadow: 1px 1px 5px #000000c9;
     font-size: 1em;
     letter-spacing: normal;
     text-transform: capitalize;
-    margin: .25em;
+    margin: 0.25em;
     height: 100%;
     width: 20vw;
     min-width: 250px;
 
-    @media screen and (max-width: 768px) {
-      width: 100%;
-      min-width: 100%;
-      overflow: hidden;
-
-    }
-
     a {
+      display: flex;
       cursor: pointer;
       margin: 0;
       padding: 0;
       position: relative;
       text-decoration: none;
 
-      .picture {
+      .gardenPicture {
         position: relative;
         display: inline-block;
-
 
         img {
           height: 100%;
@@ -89,26 +78,140 @@
           top: 0;
           height: 100%;
           width: 100%;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.356) 15%, hsla(0, 0%, 100%, .25));
+          background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.356) 15%,
+            hsla(0, 0%, 100%, 0.25)
+          );
         }
 
         &:hover {
-          background-color: #C92965;
+          background-color: #c92965;
           filter: brightness(1.25);
         }
       }
-
 
       p {
         z-index: 1;
         color: white;
         position: absolute;
-        padding: .2em;
+        padding: 0.2em;
         bottom: -15px;
         right: 0;
       }
-
     }
 
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      min-width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(239, 255, 247, 1) 5%,
+      rgba(230, 255, 246, 1) 15%,
+      rgba(231, 255, 242, 1) 40%,
+      rgba(223, 255, 242, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    padding-bottom: 0;
+
+    .top {
+      height: 20%;
+
+      .header_img {
+        background-position: left;
+      }
+    }
+
+    .body {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 10px 0.5fr 0.5fr;
+      grid-template-rows: 0.15fr 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+      h1 {
+        grid-area: 1 / 2 / 2 / 5;
+        background-color: #c92965;
+      }
+
+      .highlights {
+        grid-area: 2 / 2 / 3 / 5;
+        display: flex;
+        justify-content: stretch;
+
+        li {
+          // width: auto;
+        }
+      }
+    }
+
+    .gardens,
+    .plants {
+      .pageTitle {
+        position: sticky;
+        font-size: 2em;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+    }
+
+    .plant, .garden{
+      display: grid;
+      grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
+      grid-template-rows: 0.15fr 2fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 0px;
+      padding-top: 25vh;
+
+      .plantName, .gardenTitle {
+        grid-area: 1 / 3 / 2 / 4;
+        position: relative;
+        font-size: 1.2em;
+      }
+      .plantPhoto, .gardenMedia {
+        grid-area: 1 / 2 / 3 / 3;
+
+      }
+
+      .gardenMedia {
+        max-width: 45vw;
+      }
+
+      .gardenBlank {
+        background-color: black;
+      }
+
+      .pageDesc {
+        grid-area: 2 / 3 / 3 / 4;
+      }
+    }
+  }
+
+  .pageTitle, .gardenTitle {
+    text-align: center;
+    box-shadow: none;
+    font-size: 3em;
+    font-weight: bold;
+    width: 100%;
+  }
+
+
+
+  .highlights {
+    border: none;
   }
 }
