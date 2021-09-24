@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { RiHome4Fill, RiPlantFill, RiCompass3Fill } from "react-icons/ri";
 
-// import { TiTree } from "react-icons/ti";
+import { TiTree } from "react-icons/ti";
 import { GiTwirlyFlower } from "react-icons/gi";
 
 import "../scss/nav.scss";
@@ -12,21 +12,21 @@ export function Nav(props) {
     <div>
       <NavLink to="/home">
         <RiHome4Fill />
-        <span>Home</span>
+        <span>Current Bloom</span>
       </NavLink>
       <NavLink to="/tours">
         <RiCompass3Fill />
         <span>Tours</span>
       </NavLink>
       <NavLink to="/gardens">
-        <GiTwirlyFlower /> <span>Gardens</span>
+        <GiTwirlyFlower /> <span>Locations</span>
       </NavLink>
       <NavLink to="/plants">
         <RiPlantFill /> <span>Plants</span>
       </NavLink>
-      {/* <NavLink to="/trees">
+      <NavLink to="/trees">
         <TiTree /> <span>Trees</span>
-      </NavLink> */}
+      </NavLink>
     </div>
   );
 }

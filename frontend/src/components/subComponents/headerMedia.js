@@ -5,6 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 //https://www.npmjs.com/package/react-responsive-carousel
 //https://www.npmjs.com/package/react-gallery-carousel
 
+import placeholder from "../../assets/placeholder.png";
+
+
+
 export function plantHeaderMedia(urlString) {
   let urlArray = urlString.split(",");
 
@@ -44,13 +48,20 @@ export function gardenHeaderMedia(array) {
     }
   });
 
-  return (
-    <div className="garden">
-      <Carousel showThumbs={false} emulateTouch={true}>
-        {arrayMedia}
-      </Carousel>
-    </div>
-  );
+  if (arrayMedia.length === 0) {
+    return (
+      <div className="gardenMedia">
+        <img alt = "placehoder" src= {placeholder} />
+      </div>
+    );
+  } else
+    return (
+      <div className="gardenMedia">
+        <Carousel showThumbs={false} emulateTouch={true}>
+          {arrayMedia}
+        </Carousel>
+      </div>
+    );
 }
 
 const exported = { plantHeaderMedia, gardenHeaderMedia };

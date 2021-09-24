@@ -7,8 +7,7 @@ function renderComp(prop) {
   if (prop !== null) {
     return (
       <div className="plants">
-        <h1 className="pageTitle">All Plants</h1>
-        <nav> </nav>
+        <h1 className="pageTitle">Plants Glossary</h1>
         <ul className="highlights">{Main.mapHighlights(prop)}</ul>
       </div>
     );

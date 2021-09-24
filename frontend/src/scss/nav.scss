@@ -34,23 +34,25 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+
   nav {
     border: none;
     position: relative;
-    max-width: 5em;
 
     div {
+    border: none;
+    background-color: white;
+    justify-content: flex-end;
+    gap: 3em;
+    padding-right: 2em;
+    
+    a {
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 100%;
-      background-color: rgb(236, 185, 42);
-
-      a {
-      color: white;
-
-        height: 100%;
-      }
+      flex-direction: row;
+      gap: 10px;
+    }
     }
   }
+
+
 }
