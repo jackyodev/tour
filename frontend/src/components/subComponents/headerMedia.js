@@ -51,7 +51,7 @@ export function gardenHeaderMedia(array) {
   if (arrayMedia.length === 0) {
     return (
       <div className="gardenMedia">
-        <img alt = "placehoder" src= {placeholder} />
+        <img id = "placeHolder" alt = "placehoder" src= {placeholder} />
       </div>
     );
   } else
