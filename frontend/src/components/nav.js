@@ -12,7 +12,7 @@ export function Nav(props) {
     <div>
       <NavLink to="/home">
         <RiHome4Fill />
-        <span>Current Bloom</span>
+        <span>Bloom</span>
       </NavLink>
       <NavLink to="/tours">
         <RiCompass3Fill />

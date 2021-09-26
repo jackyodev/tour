@@ -39,12 +39,13 @@ export function Gardens() {
 
 
    const listenToScroll = () => {
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop
-  
+
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop
+
+    console.log(winScroll);
     const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight
+      document.documentElement.scrollHeight - document.documentElement.clientHeight
+      console.log(height);
   
     const scrolled = winScroll / height
     }

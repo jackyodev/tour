@@ -1,7 +1,7 @@
 export const buildingRender = (state) => {
     return (
       <>
-       <div class="tab">
+       <div className="tab">
          
 <h2>Healthy Paints and Materials</h2>
 
