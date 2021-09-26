@@ -2,11 +2,6 @@ var CACHE_NAME = 'pwa-task-manager';
 
 var urlsToCache = [
   '/',
-  '/api/plants',
-  '/api/plants/months',
-  '/api/gardens',
-  'https://qbgapp2.herokuapp.com/static/media/welcome_video_bg.1d451d9a.mp4',
-  
 ];
 
 console.log();
