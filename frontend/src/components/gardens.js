@@ -5,9 +5,7 @@ import { Loading } from "./subComponents/loading.js";
 
 import "../scss/gardens.scss";
 
-
-
-function renderComp(array) {
+function renderComp(array, click) {
   if (array !== null) {
     const mapArray = array.map((el, i) => {
       return (
@@ -36,29 +34,20 @@ function renderComp(array) {
 
 export function Gardens() {
   const [allGardens, setAllGardens] = useState(null);
+  // const [scrollPos, setScrollPos] = useState(null);
 
-
-   const listenToScroll = () => {
-
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-
-    console.log(winScroll);
-    const height =
-      document.documentElement.scrollHeight - document.documentElement.clientHeight
-      console.log(height);
-  
-    const scrolled = winScroll / height
-    }
-
+  // const listenToScroll = () => {
+  //   const post = document.body;
+  //   console.log(post);
+  // };
 
   useEffect(() => {
-
-
     //https://dev.to/reenydavidson/settimeout-in-useeffect-api-call-data-fetching-j33
     const fetchData = () => {
       axios
         .get(`/api/gardens`)
         .then((res) => {
+          console.log(res.data.data);
           setAllGardens(res.data.data);
         })
         .catch((err) => console.log(err));
@@ -66,13 +55,12 @@ export function Gardens() {
 
     const timer = setTimeout(() => {
       fetchData();
-      window.removeEventListener('scroll', listenToScroll)
+      // window.removeEventListener("scroll", listenToScroll);
     }, 500);
 
     //the return callback is to cleanup the useEffect
-    return () =>
-      clearTimeout(timer)      
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
   return renderComp(allGardens);
 }

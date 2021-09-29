@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+
+
 import { useLocation } from "react-router-dom";
 import { Loading } from "./subComponents/loading.js";
 import { gardenHeaderMedia } from "./subComponents/headerMedia.js";
+import { plantMap } from "./subComponents/plantMap.js"
+
 
 import "../scss/garden.scss";
 
 function renderComp(props) {
+
+
   if (props !== null) {
     let { map_number, location_name, place_desc } = props.desc;
 
@@ -17,7 +23,7 @@ function renderComp(props) {
           {map_number}. {location_name}
         </h1>
         {gardenHeaderMedia(props.media)}
-        <p className="pageDesc">{place_desc}</p>
+        <div className="pageDesc"><p>{place_desc}</p><h4> Plants In this Area:</h4><div className = "plantsbyLocation" >{plantMap(props.plants)}</div> </div>
       </div>
     );
   } else {
@@ -46,7 +52,7 @@ export function Garden() {
 
     const timer = setTimeout(() => {
       fetchData();
-    }, 1000);
+    }, 1100);
 
     //the return callback is to cleanup the useEffect
     return () => clearTimeout(timer);

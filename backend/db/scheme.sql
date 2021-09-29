@@ -4,13 +4,15 @@
 
 --\COPY comments (body, users_id, songs_id) FROM './comments.csv' DELIMITER ',' CSV HEADER;--
 
--- DROP DATABASE IF EXISTS qbgapp;
--- CREATE DATABASE qbgapp;
+DROP DATABASE IF EXISTS qbgapp;
+CREATE DATABASE qbgapp;
 
--- \c qbgapp;
+\c qbgapp;
 
 
-const path = "E:\Projects\tour\backend\db"
+-- const path = "E:\Projects\tour\backend\db"
+-- https://dev.to/studio_hungry/how-to-seed-a-postgres-database-with-node-384i
+-- psql -U postgres < schema.sql
 
 CREATE TABLE months
 (
@@ -55,7 +57,8 @@ CREATE TABLE plantsLocations
 (
  id SERIAL PRIMARY KEY,
  common_name VARCHAR NOT NULL,
- location VARCHAR(50)
+ location VARCHAR(50),
+ location_id INT
 );
 
 CREATE TABLE plants
@@ -82,6 +85,6 @@ id SERIAL PRIMARY KEY,
 \COPY birds (bird_name, bird_species_name)  FROM 'birds.csv' DELIMITER ',' CSV HEADER;--
 \COPY plants (plant_id, plant_species_name, common_name, plant_desc  )  FROM 'plants.csv' DELIMITER ',' CSV HEADER  encoding 'UTF8';-- 
 \COPY plantsMonths (month_number, common_name)  FROM 'plantsByMonths.csv' DELIMITER ',' CSV HEADER;--
-\COPY plantsLocations (common_name, location)  FROM 'plantsByLocations.csv' DELIMITER ',' CSV HEADER;--
+\COPY plantsLocations (common_name, location, location_id)  FROM 'plantsByLocations.csv' DELIMITER ',' CSV HEADER;--
 \COPY plantsPhotos (plant_id, plant_species_name, common_name, photo_url)  FROM 'plantsPhotos.csv' DELIMITER ',' CSV HEADER;--
 
