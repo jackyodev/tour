@@ -1,16 +1,17 @@
 nav {
   border-top: 1px solid darkgrey;
-  background-color: rgb(251, 251, 251);
   position: fixed;
   bottom: 0;
   z-index: 3;
   width: 100vw;
-  padding-bottom: 2vh;
+  padding-bottom: 1.25vh;
+  background-color: rgb(247, 247, 247);
+  border: none;
+
 
   div {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(247, 247, 247);
 
     a {
       font-size: 0.55em;
@@ -39,10 +40,13 @@ nav {
   nav {
     border: none;
     position: relative;
+    padding: 0;
+    padding-bottom: 0;
+
 
     div {
     border: none;
-    background-color: white;
+    background-color: transparent;
     justify-content: flex-end;
     gap: 3em;
     padding-right: 2em;

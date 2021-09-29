@@ -6,7 +6,7 @@ export function Loading() {
     <>
       <div className="loading">
         <img alt="loading spinner" src={loadingSpinner} width="50px" />
-        <p> Loading.. </p>
+        <p> Loading...</p>
       </div>
     </>
   );

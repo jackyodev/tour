@@ -114,6 +114,8 @@
   width: 100%;
 }
 
+
+
 @media screen and (min-width: 767px) {
   .main {
     display: flex;
@@ -201,11 +203,15 @@
         background-color: black;
       }
 
-
-
       .pageDesc {
         grid-area: 2 / 3 / 3 / 4;
+        margin: 0;
+        padding: 0;
+        white-space: pre-line;
+
       }
+
+
     }
   }
 
@@ -215,6 +221,8 @@
     font-size: 3em;
     font-weight: bold;
     width: 100%;
+    border-bottom-right-radius: 0;
+
   }
 
 
