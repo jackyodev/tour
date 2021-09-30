@@ -1,12 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 
 export function plantMap(array) {
 
     console.log(array);
   let plantMap = array.map((el, i) => {
-      return <a href ={`/plant/?id=${el.id}`} key = {i}> {el.common_name} </a>
+      return <Link to={`/plant/?id=${el.id}`} key = {i}> {el.common_name} </Link>
   });
 
   console.log(plantMap);

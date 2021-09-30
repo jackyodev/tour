@@ -4,15 +4,10 @@ export const historyRender = (state) => {
 
       <div>
       <h1>Mission</h1>
-        <figure>
           <img
             alt="Garden on Parade gate in 1939"
             src="https://queensbotanical.org/wp-content/uploads/2015/11/gop-gates-200-dpi-205x300.jpg"
           />
-          <figcaption>
-            <i>Gates to "Gardens on parade"</i>
-          </figcaption>
-        </figure>
         <p>
           The Queens Botanical Garden is an urban oasis where people, plants,
           and cultures are celebrated through inspiring gardens, innovative
@@ -29,33 +24,17 @@ export const historyRender = (state) => {
         </p>
       </div>
 
+
       <div>
         <h1> History </h1>
-        <figure>
           <img
             alt="Poster cover for 1939 World’s Fair horticulture exhibition"
             src="https://queensbotanical.org/wp-content/uploads/2017/06/jandp-postcard-600x369.jpg"
           />
-          <figcaption>
             <i>
               Poster cover for 1939 World’s Fair “Gardens on Parade”
               horticulture exhibition
             </i>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img
-            alt="English cottage garden from the “Gardens on parade” exhibit of the 1939 World’s Fair"
-            src="https://queensbotanical.org/wp-content/uploads/2015/11/1939-cover-212x300.jpg"
-          />
-          <figcaption>
-            <i>
-              English cottage garden from the “Gardens on parade” exhibit of the
-              1939 World’s Fair
-            </i>
-          </figcaption>
-        </figure>
         <p>
           Located at the northeast corner of Flushing Meadows-Corona Park in
           Flushing, the garden evolved from the five-acre “Gardens on Parade”
@@ -69,6 +48,20 @@ export const historyRender = (state) => {
           entrance today. QBG has become a 39-acre oasis in one of New York
           City’s most bustling and diverse neighborhoods.
         </p>
+
+
+        <img
+            alt="English cottage garden from the “Gardens on parade” exhibit of the 1939 World’s Fair"
+            src="https://queensbotanical.org/wp-content/uploads/2015/11/1939-cover-212x300.jpg"
+          
+          />
+
+                      <i>
+              English cottage garden from the “Gardens on parade” exhibit of the
+              1939 World’s Fair
+            </i>
+
+
       </div>
 
       <div>
@@ -109,6 +102,8 @@ export const historyRender = (state) => {
           its plant collections and visitors.
         </p>
       </div>
+    
     </div>
+
   );
 };
