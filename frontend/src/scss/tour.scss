@@ -1,71 +1,62 @@
-.react-tabs__tab-list {
+.sectionTour{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 0;
-  color: #c92965;
-}
-
-.react-tabs__tab:hover {
-  color: hsl(124, 60%, 15%);
-}
-
-.react-tabs__tab--selected {
-  color: #c92965;
-}
-
-.react-tabs__tab-panel--selected {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+
+.css-15tf7he {
+}
+
+
+.css-1nrl0ya{
+  align-self: center;
+  max-width: 99vw;
   
+img {
+  max-width: 100%;
+}
 }
 
-.tabs_panels {
-  overflow: auto;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 
-  img {
-    width: clamp(300px, 40%, 500px);
-    margin: 0;
-    padding: 0;
-  }
-
-  p {
-    text-align: left;
-    margin: 1rem;
-  }
-}
-
-.tab {
-  text-align: left;
-  margin: 10px;
-  padding: 0;
+.css-15tf7he {
+  padding-bottom: 40px;
+  font-size: .8em;
 
 }
 
-@media screen and (min-width: 768px) {
 
-    .react-tabs__tab--selected {
-        background-color: #ebfff7bd;
-      }
 
+@media screen and (min-width: 767px) {
+  .sectionTour {
 
     .tab {
-        width: 55vw;
-
-
-        div {
-        
-            border-radius: 2px;
-            margin: 10px;
-
-            h1, h2{
-                color: #c92965;
-            }
-        }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    div {
+      display: inline-block;
+      flex-direction: column;
     }
+
+    div > img {
+      // max-width: 250px;
+      float: left;
+    }
+
+    }
+
+
+
+  }
+
+  .css-1nrl0ya{
+    max-width: 75vw;
+  img {
+    max-width: 100%;
+  }
+  }
+
+
 }

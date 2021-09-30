@@ -47,7 +47,6 @@ export function Gardens() {
       axios
         .get(`/api/gardens`)
         .then((res) => {
-          console.log(res.data.data);
           setAllGardens(res.data.data);
         })
         .catch((err) => console.log(err));

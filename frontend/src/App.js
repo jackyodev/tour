@@ -31,7 +31,7 @@ function App() {
             </div>
           </Route>
           <Route exact path="/tours">
-            <div className = "section"> 
+            <div className = "section sectionTour"> 
             <Tour />
             </div>
           </Route>
@@ -41,7 +41,7 @@ function App() {
             </div>
           </Route>
           <Route exact path="/garden">
-            <div className = "section"> 
+            <div className = "section "> 
             <Garden />
             </div>
           </Route>

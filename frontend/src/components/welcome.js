@@ -6,7 +6,7 @@ import "../scss/welcomeScreen.scss";
 export function WelcomeScreen(props) {
   return (
     <div className="welcomeScreen">
-      <video autoPlay muted loop>
+      <video autoplay = "autoplay" loop = "true" muted>
         <source src={video} type="video/mp4" />
       </video>
 
