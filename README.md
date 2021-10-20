@@ -28,7 +28,7 @@ https://qbgapp2.herokuapp.com/
 <span> 
  <img src = "https://github.com/jackyodev/tour/blob/main/frontend/public/qbgapp2.herokuapp.com_home(Moto%20G4)%20(4).png" width = "150px">
 <img src = "https://github.com/jackyodev/tour/blob/main/frontend/public/qbgapp2.herokuapp.com_home(Moto%20G4)%20(6).png" width = "150px">
-<img src = "https://github.com/jackyodev/tour/blob/main/frontend/public/qbgapp2.herokuapp.com_home(Nest%20Hub).png" width = "150px">
+<img src = "https://github.com/jackyodev/tour/blob/main/frontend/public/qbgapp2.herokuapp.com_home(Nest%20Hub).png" width = "300px">
  </span>
  
 
