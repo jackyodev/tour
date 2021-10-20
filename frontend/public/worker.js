@@ -4,8 +4,6 @@ var urlsToCache = [
   '/',
 ];
 
-console.log();
-
 // Install a service worker
 self.addEventListener('install', event => {
   // Perform install steps
