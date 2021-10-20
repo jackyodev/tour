@@ -26,6 +26,13 @@ img {
 }
 
 
+.sectionTour p {
+  margin: 2vw;
+  padding: 2px
+
+}
+
+
 
 @media screen and (min-width: 767px) {
   .sectionTour {
@@ -41,20 +48,22 @@ img {
     }
 
     div > img {
-      // max-width: 250px;
-      float: left;
+      text-align: center;
+      max-width: 250px;
+      float: inline-start;
     }
 
     }
-
-
 
   }
 
   .css-1nrl0ya{
-    max-width: 75vw;
+
+    max-width: 50%;
   img {
     max-width: 100%;
+    float: left;
+    margin-right: 2.5vw;
   }
   }
 

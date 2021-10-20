@@ -1,13 +1,13 @@
 export const sustainabilityRender = (state) => {
   return (
     <div className = "tab">
-      <div>
+      <p>
         Queens Botanical Garden teaches and practices sustainability in design,
         construction, and operations support; environmental stewardship;
         long-term financial viability; and the health of visitors, staff, and
         the community.
-      </div>
-      <div>
+      </p>
+      <p>
         The Garden's <i>Master Plan of 2001</i> launched the Sustainable
         Landscapes and Buildings Project. As the name implies, the project is
         much more than buildings. It includes new plants, many of which are
@@ -17,7 +17,7 @@ export const sustainabilityRender = (state) => {
         Administration Center; and the transformation of our existing
         parking lot into a 125-space parking garden which began in September
         2008.
-      </div>
+      </p>
 
       <p>On September 27, 2007, Mayor Michael Bloomberg,
         Borough President Helen Marshall, whose office has been the lead
@@ -63,7 +63,7 @@ export const sustainabilityRender = (state) => {
         Rosaceae (Rose Family), Liliaceae (Lily Family), and Compositae
         (Aster/Daisy/Sunflower Family).
       </p>
-      <h2>
+      <p>
         QBG has the opportunity to share with our visitors the critical role
         that plants play both culturally and ecologically in our lives as well
         as the lives of the creatures that share our ecosystems. At the Garden,
@@ -71,7 +71,7 @@ export const sustainabilityRender = (state) => {
         gardens and habitats that will provide diverse habitat, become a
         functional part of the local hydrology, and offer new opportunities for
         visitors to connect to plants.
-      </h2>
+      </p>
       <h1>Benefits:</h1>
       <p>
         Many people have never had the chance to experience healthy native
