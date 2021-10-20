@@ -7,10 +7,12 @@ The PWA Tour App is created to provide a potential digital experience at the Que
  
 Backend relational databases were built using PostgreSQL.
 
-
-<img src = "https://raw.githubusercontent.com/jackyodev/tour/main/frontend/public/qbgapp2.herokuapp.com_(Moto%20G4).png" width = "150px">
+<span> 
+ <img src = "https://raw.githubusercontent.com/jackyodev/tour/main/frontend/public/qbgapp2.herokuapp.com_(Moto%20G4).png" width = "150px">
 <img src = "https://raw.githubusercontent.com/jackyodev/tour/main/frontend/public/qbgapp2.herokuapp.com_home(Moto%20G4)%20(1).png" width = "150px">
 <img src = "https://github.com/jackyodev/tour/blob/main/frontend/public/qbgapp2.herokuapp.com_home(Moto%20G4)%20(2).png" width = "150px">
+ </span> 
+
 
 
 **Minimum Viable Product (MVP):**
