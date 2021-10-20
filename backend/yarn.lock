@@ -108,7 +108,7 @@ character-parser@1.2.1:
   integrity sha1-wN3kqxgnE7kZuXCVmhI+zBow/NY=
 
 clean-css@^3.1.9:
-  version "3.4.28"
+  version "4.1.11"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-3.4.28.tgz#bf1945e82fc808f55695e6ddeaec01400efd03ff"
   integrity sha1-vxlF6C/ICPVWlebd6uwBQA79A/8=
   dependencies:
@@ -136,8 +136,8 @@ commander@~2.6.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.6.0.tgz#9df7e52fb2a0cb0fb89058ee80c3104225f37e1d"
   integrity sha1-nfflL7Kgyw+4kFjugMMQQiXzfh0=
 
-constantinople@~3.0.1:
-  version "3.0.2"
+constantinople@~3.1.1:
+  version "3.1.1"
   resolved "https://registry.yarnpkg.com/constantinople/-/constantinople-3.0.2.tgz#4b945d9937907bcd98ee575122c3817516544141"
   integrity sha1-S5RdmTeQe82Y7ldRIsOBdRZUQUE=
   dependencies:
