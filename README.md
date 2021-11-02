@@ -1,6 +1,5 @@
 #   Progressive Web Apps Tour App
 
-The Weather App is a Single Page Application created from create-react-app. It is designed to be a full-screen weather app that shows you the current weather and the 7 days forecast for a particular area.
 The PWA Tour App is created to provide a potential digital experience at the Queens Botanical Garden. This experience will allow visitors, learners, and educators to gain knowledge about the garden's history, gems, and mission.
 
  The base app was built using "create-react-app" and is designed to be mobile-friendly, responsive, and installable via "Add to Home Screen" on IOS, "Install App" on Androids with Services Worker.
